@@ -1,0 +1,1550 @@
+{
+ "generated": "2026-10-11",
+ "repos": [
+  {
+   "repo": "Medved",
+   "pushed": "2026-10-11",
+   "days_since_push": 0,
+   "commits_7d": 8,
+   "commits_30d": 30,
+   "open_prs": [],
+   "branches": [
+    "claude/bear-movement-analysis-app-am4drf",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "Nasadenie na GitHub Pages",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-11",
+     "event": "workflow_dispatch"
+    },
+    {
+     "name": "Denná analýza médií",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-11",
+     "event": "schedule"
+    },
+    {
+     "name": "Nasadenie na GitHub Pages",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-10",
+     "event": "workflow_dispatch"
+    },
+    {
+     "name": "Denná analýza médií",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-10",
+     "event": "schedule"
+    },
+    {
+     "name": "Nasadenie na GitHub Pages",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-09",
+     "event": "workflow_dispatch"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Intime",
+   "pushed": "2026-10-08",
+   "days_since_push": 3,
+   "commits_7d": 3,
+   "commits_30d": 4,
+   "open_prs": [],
+   "branches": [
+    "claude/android-sexual-activity-counter-f5finh",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "Android CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-08",
+     "event": "push"
+    },
+    {
+     "name": "iOS CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-08",
+     "event": "push"
+    },
+    {
+     "name": "iOS CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-08",
+     "event": "pull_request"
+    },
+    {
+     "name": "Android CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-08",
+     "event": "pull_request"
+    },
+    {
+     "name": "Android CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-08",
+     "event": "push"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "GhostDash",
+   "pushed": "2026-10-07",
+   "days_since_push": 3,
+   "commits_7d": 10,
+   "commits_30d": 18,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "GhostDash M1: game-engine (fixed-timestep, deterministic tracks) + Compose gameplay app",
+     "head": "claude/ghostdash-android-m1-ia3c1k",
+     "updated": "2026-10-07",
+     "commits": 69,
+     "files": 164,
+     "additions": 16281,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/ghostdash-android-m1-ia3c1k",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "Android CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-07",
+     "event": "pull_request"
+    },
+    {
+     "name": "Android CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-07",
+     "event": "push"
+    },
+    {
+     "name": "pages build and deployment",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-07",
+     "event": "dynamic"
+    },
+    {
+     "name": "Android CI",
+     "status": "completed",
+     "conclusion": "failure",
+     "date": "2026-10-07",
+     "event": "pull_request"
+    },
+    {
+     "name": "pages build and deployment",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-07",
+     "event": "dynamic"
+    }
+   ],
+   "default_branch": "claude/ghostdash-android-m1-ia3c1k"
+  },
+  {
+   "repo": "CK-DAKA-app",
+   "pushed": "2026-10-07",
+   "days_since_push": 3,
+   "commits_7d": 4,
+   "commits_30d": 5,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "Fáza 0–13: appka CK DAKA — napojená na reálne dáta",
+     "head": "claude/ck-daka-android-app-bps1hv",
+     "updated": "2026-10-07",
+     "commits": 184,
+     "files": 349,
+     "additions": 45855,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/admin-chat-datum",
+    "claude/admin-data-chat",
+    "claude/asistent-datum",
+    "claude/chat-nadpisy",
+    "claude/ck-daka-android-app-bps1hv",
+    "claude/interny-mcp-endpoint",
+    "claude/mcp-isdaka",
+    "claude/mcp-oauth",
+    "claude/mcp-vendorovany-zdrojak",
+    "claude/redakcia-kluce",
+    "deploy/web",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-07",
+     "event": "push"
+    },
+    {
+     "name": "Deploy web build",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-07",
+     "event": "push"
+    },
+    {
+     "name": "Build Android APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-07",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-07",
+     "event": "push"
+    },
+    {
+     "name": "Build Android APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-07",
+     "event": "push"
+    }
+   ],
+   "default_branch": "claude/ck-daka-android-app-bps1hv"
+  },
+  {
+   "repo": "Mimicchain",
+   "pushed": "2026-10-07",
+   "days_since_push": 3,
+   "commits_7d": 0,
+   "commits_30d": 1,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "MimicChain MVP: Android app, backend API + workers, admin panel, infra",
+     "head": "claude/mimicchain-app-qjyoja",
+     "updated": "2026-10-07",
+     "commits": 20,
+     "files": 439,
+     "additions": 41837,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/mimicchain-app-qjyoja",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-07",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-18",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-18",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-18",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "failure",
+     "date": "2026-09-18",
+     "event": "pull_request"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Textovka",
+   "pushed": "2026-10-07",
+   "days_since_push": 3,
+   "commits_7d": 1,
+   "commits_30d": 3,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "Posledná stopa – detektívna textovka pre Android",
+     "head": "claude/detective-text-adventure-game-ww4zt9",
+     "updated": "2026-10-07",
+     "commits": 34,
+     "files": 152,
+     "additions": 9503,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/detective-text-adventure-game-ww4zt9",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "Build Android APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-07",
+     "event": "push"
+    },
+    {
+     "name": "Deploy web version to GitHub Pages",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-07",
+     "event": "push"
+    },
+    {
+     "name": "Build iOS App",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-03",
+     "event": "workflow_dispatch"
+    },
+    {
+     "name": "Build Android APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-03",
+     "event": "push"
+    },
+    {
+     "name": "Deploy web version to GitHub Pages",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-03",
+     "event": "push"
+    }
+   ],
+   "default_branch": "claude/detective-text-adventure-game-ww4zt9"
+  },
+  {
+   "repo": "ckdaka-recommender",
+   "pushed": "2026-10-07",
+   "days_since_push": 3,
+   "commits_7d": 1,
+   "commits_30d": 1,
+   "open_prs": [],
+   "branches": [
+    "claude/personalized-recommendations-emails-02otj6",
+    "master"
+   ],
+   "recent_runs": [
+    {
+     "name": "Graph Update: pip in /recommender #1457021450",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-07-12",
+     "event": "dynamic"
+    }
+   ],
+   "default_branch": "master"
+  },
+  {
+   "repo": "Koleso-astia",
+   "pushed": "2026-10-07",
+   "days_since_push": 3,
+   "commits_7d": 0,
+   "commits_30d": 1,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "Koleso šťastia CK DAKA – automatický výber, kódy v DB, losovanie na serveri",
+     "head": "claude/tender-lovelace-5ic1ra",
+     "updated": "2026-10-07",
+     "commits": 9,
+     "files": 16,
+     "additions": 1920,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/tender-lovelace-5ic1ra",
+    "main"
+   ],
+   "recent_runs": [],
+   "default_branch": "main"
+  },
+  {
+   "repo": "DJ-IMI",
+   "pushed": "2026-10-07",
+   "days_since_push": 3,
+   "commits_7d": 4,
+   "commits_30d": 10,
+   "open_prs": [],
+   "branches": [
+    "ccr-ab1e9307-9lukbs"
+   ],
+   "recent_runs": [],
+   "default_branch": "ccr-ab1e9307-9lukbs"
+  },
+  {
+   "repo": "Web-aplik-cia",
+   "pushed": "2026-10-05",
+   "days_since_push": 5,
+   "commits_7d": 1,
+   "commits_30d": 9,
+   "open_prs": [],
+   "branches": [
+    "claude/travel-agency-competitor-analysis-bri7r7",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "pages build and deployment",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-05",
+     "event": "dynamic"
+    },
+    {
+     "name": "Týždenný monitoring konkurencie",
+     "status": "completed",
+     "conclusion": "cancelled",
+     "date": "2026-10-05",
+     "event": "schedule"
+    },
+    {
+     "name": "pages build and deployment",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-28",
+     "event": "dynamic"
+    },
+    {
+     "name": "Týždenný monitoring konkurencie",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-28",
+     "event": "workflow_dispatch"
+    },
+    {
+     "name": "pages build and deployment",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-28",
+     "event": "dynamic"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Kviz",
+   "pushed": "2026-10-04",
+   "days_since_push": 6,
+   "commits_7d": 6,
+   "commits_30d": 26,
+   "open_prs": [
+    {
+     "n": 17,
+     "title": "Zmeny po hre, banka na 300 tém, univerzálna verzia /kviz, heslo pre moderátora a kvízy pre zájazdy CK DAKA",
+     "head": "claude/quiz-app-teams-iiddm9",
+     "updated": "2026-10-04",
+     "commits": 159,
+     "files": 94,
+     "additions": 152928,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/quiz-app-teams-iiddm9",
+    "main"
+   ],
+   "recent_runs": [],
+   "default_branch": "claude/quiz-app-teams-iiddm9"
+  },
+  {
+   "repo": "Uctovnik",
+   "pushed": "2026-10-02",
+   "days_since_push": 8,
+   "commits_7d": 0,
+   "commits_30d": 1,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "CK DAKA Accounting: kompletný základ účtovného systému podľa master špecifikácie",
+     "head": "claude/accounting-program-project-d6c1av",
+     "updated": "2026-10-02",
+     "commits": 51,
+     "files": 1205,
+     "additions": 316667,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/accounting-program-project-d6c1av",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-02",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-02",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-02",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-02",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-23",
+     "event": "pull_request"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Kontrola-fakt-r",
+   "pushed": "2026-09-10",
+   "days_since_push": 30,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "InvoiceFlow: discovery, dokumentácia a doménové jadro (Phase 0)",
+     "head": "claude/nova-funkcionalita-spec-cwrfsh",
+     "updated": "2026-09-10",
+     "commits": 3,
+     "files": 50,
+     "additions": 10937,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/nova-funkcionalita-spec-cwrfsh",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-10",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-10",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-10",
+     "event": "pull_request"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "TV-v-autobusoch",
+   "pushed": "2026-09-09",
+   "days_since_push": 31,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [],
+   "branches": [
+    "claude/tv-app-bus-content-ovbp0s",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-09",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-09",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-09",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-09",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "failure",
+     "date": "2026-09-09",
+     "event": "pull_request"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Bus-syst-m",
+   "pushed": "2026-09-07",
+   "days_since_push": 33,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [
+    {
+     "n": 2,
+     "title": "DAKA Cesta — vernostná hra pre zákazníkov (Flutter + Flame)",
+     "head": "claude/peaceful-bohr-to65F",
+     "updated": "2026-08-15",
+     "commits": 46,
+     "files": 116,
+     "additions": 8166,
+     "draft": true,
+     "mergeable": "clean"
+    },
+    {
+     "n": 1,
+     "title": "Objednávkový IS DAKA – zadanie, gap-analýza a referenčný build",
+     "head": "claude/serene-maxwell-QiCM0",
+     "updated": "2026-09-07",
+     "commits": 26,
+     "files": 585,
+     "additions": 177476,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/peaceful-bohr-to65F",
+    "claude/serene-maxwell-QiCM0",
+    "game-web-build",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "Build DAKA Cesta (APK + web)",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-15",
+     "event": "push"
+    },
+    {
+     "name": "Build DAKA Cesta (APK + web)",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-06-13",
+     "event": "push"
+    },
+    {
+     "name": "Build DAKA Cesta (APK + web)",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-06-13",
+     "event": "push"
+    },
+    {
+     "name": "Provision leaderboard store",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-06-13",
+     "event": "push"
+    },
+    {
+     "name": "Build DAKA Cesta (APK + web)",
+     "status": "completed",
+     "conclusion": "cancelled",
+     "date": "2026-06-13",
+     "event": "push"
+    }
+   ],
+   "default_branch": "claude/serene-maxwell-QiCM0"
+  },
+  {
+   "repo": "Kalinkovo-v-mobile",
+   "pushed": "2026-09-07",
+   "days_since_push": 33,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [],
+   "branches": [
+    "claude/web-app-proposal-jjgtge",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-07",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-07",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-06",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-06",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-06",
+     "event": "pull_request"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Kalinkovo",
+   "pushed": "2026-09-06",
+   "days_since_push": 34,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [],
+   "branches": [
+    "claude/nova-aplikacia-w0wvr3",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-06",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "failure",
+     "date": "2026-09-06",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-06",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-06",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-06",
+     "event": "pull_request"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Efaktura",
+   "pushed": "2026-09-06",
+   "days_since_push": 34,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "Základ systému e-faktúr: EN 16931 model, UBL generátor, mapper CK DAKA, Peppol validátor",
+     "head": "claude/efaktura-system-komercny-w92fn3",
+     "updated": "2026-09-06",
+     "commits": 1,
+     "files": 33,
+     "additions": 4572,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/efaktura-system-komercny-w92fn3",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-06",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-06",
+     "event": "push"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Bus-aukcia",
+   "pushed": "2026-09-06",
+   "days_since_push": 34,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [],
+   "branches": [
+    "claude/add-admin-user",
+    "claude/bus-auction-milestone-0-1yxneh",
+    "claude/features-milestone-1",
+    "feat/ux-improvements",
+    "fix/activate-existing-users",
+    "fix/dashboard-404-route",
+    "fix/registration-email-verify",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-06",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-06",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-19",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-18",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "failure",
+     "date": "2026-08-18",
+     "event": "pull_request"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Tipy",
+   "pushed": "2026-09-05",
+   "days_since_push": 36,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [],
+   "branches": [
+    "claude/sports-betting-tips-app-6a30at"
+   ],
+   "recent_runs": [],
+   "default_branch": "claude/sports-betting-tips-app-6a30at"
+  },
+  {
+   "repo": "MCP-CK-DAKA",
+   "pushed": "2026-09-04",
+   "days_since_push": 36,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "MCP server pre dáta CK DAKA + návod na prieskum administrácie",
+     "head": "claude/mcp-ck-daka-integration-tttnfy",
+     "updated": "2026-09-04",
+     "commits": 34,
+     "files": 45,
+     "additions": 15463,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/mcp-ck-daka-integration-tttnfy",
+    "main"
+   ],
+   "recent_runs": [],
+   "default_branch": "claude/mcp-ck-daka-integration-tttnfy"
+  },
+  {
+   "repo": "Futbal",
+   "pushed": "2026-09-01",
+   "days_since_push": 39,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [],
+   "branches": [
+    "claude/novy-projekt-specifikacia-iecg9e",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-01",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-09-01",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-31",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-31",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-31",
+     "event": "push"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Bazar",
+   "pushed": "2026-08-20",
+   "days_since_push": 51,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "KARAVIO: bootstrap platformy — monorepo, dokumentácia, API, web, worker, Inspect",
+     "head": "claude/karavio-marketplace-app-w0983x",
+     "updated": "2026-08-20",
+     "commits": 35,
+     "files": 252,
+     "additions": 37285,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/karavio-marketplace-app-w0983x",
+    "deploy",
+    "deploy-artifacts",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-20",
+     "event": "pull_request"
+    },
+    {
+     "name": "Android APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-20",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-20",
+     "event": "pull_request"
+    },
+    {
+     "name": "Android APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-20",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-20",
+     "event": "pull_request"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Plaud",
+   "pushed": "2026-08-20",
+   "days_since_push": 51,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [],
+   "branches": [
+    "claude/serene-planck-7Yv91",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "Demo na GitHub Pages",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-18",
+     "event": "push"
+    },
+    {
+     "name": "Demo na GitHub Pages",
+     "status": "completed",
+     "conclusion": "cancelled",
+     "date": "2026-08-18",
+     "event": "push"
+    },
+    {
+     "name": "Demo na GitHub Pages",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-11",
+     "event": "push"
+    },
+    {
+     "name": "Demo na GitHub Pages",
+     "status": "completed",
+     "conclusion": "cancelled",
+     "date": "2026-08-11",
+     "event": "push"
+    },
+    {
+     "name": "Demo na GitHub Pages",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-06-23",
+     "event": "push"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "baDAKAtel",
+   "pushed": "2026-08-20",
+   "days_since_push": 51,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "baDAKAteľ MVP — herný backend, mapa sveta, denná hra a passport",
+     "head": "claude/ck-daka-nova-aplikacia-180zc8",
+     "updated": "2026-08-20",
+     "commits": 21,
+     "files": 225,
+     "additions": 33095,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/ck-daka-nova-aplikacia-180zc8",
+    "deploy/api",
+    "deploy/web",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-20",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-20",
+     "event": "push"
+    },
+    {
+     "name": "Deploy API build",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-20",
+     "event": "push"
+    },
+    {
+     "name": "Deploy web build",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-20",
+     "event": "push"
+    },
+    {
+     "name": "Build Android APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-20",
+     "event": "push"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Task-app",
+   "pushed": "2026-08-18",
+   "days_since_push": 53,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [],
+   "branches": [
+    "claude/ck-daka-aplikacia-oz9n0r",
+    "main"
+   ],
+   "recent_runs": [],
+   "default_branch": "main"
+  },
+  {
+   "repo": "ckdaka-app",
+   "pushed": "2026-08-17",
+   "days_since_push": 54,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [],
+   "branches": [
+    "main"
+   ],
+   "recent_runs": [],
+   "default_branch": "main"
+  },
+  {
+   "repo": "banner-generator",
+   "pushed": "2026-08-17",
+   "days_since_push": 54,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "Automatické generovanie bannerov z feedu, produktové feedy a nahrávanie do reklamných platforiem",
+     "head": "claude/dotidot-service-expansion-ivaljb",
+     "updated": "2026-08-17",
+     "commits": 9,
+     "files": 50,
+     "additions": 7113,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/dotidot-service-expansion-ivaljb",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "pages build and deployment",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-06-09",
+     "event": "dynamic"
+    },
+    {
+     "name": "pages build and deployment",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-06-09",
+     "event": "dynamic"
+    },
+    {
+     "name": "pages build and deployment",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-06-09",
+     "event": "dynamic"
+    },
+    {
+     "name": "pages build and deployment",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-06-07",
+     "event": "dynamic"
+    },
+    {
+     "name": "pages build and deployment",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-06-07",
+     "event": "dynamic"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "vyplaty",
+   "pushed": "2026-08-15",
+   "days_since_push": 56,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [],
+   "branches": [
+    "claude/payroll-filter-payment-jhqq0a"
+   ],
+   "recent_runs": [],
+   "default_branch": "claude/payroll-filter-payment-jhqq0a"
+  },
+  {
+   "repo": "QR-code",
+   "pushed": "2026-08-15",
+   "days_since_push": 56,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [],
+   "branches": [
+    "claude/android-qr-reader-history-iv74gt",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "Build APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-15",
+     "event": "push"
+    },
+    {
+     "name": "pages build and deployment",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-15",
+     "event": "dynamic"
+    },
+    {
+     "name": "Build APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-15",
+     "event": "push"
+    },
+    {
+     "name": "Release pre Google Play",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-15",
+     "event": "workflow_dispatch"
+    },
+    {
+     "name": "Build APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-15",
+     "event": "push"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "EOS",
+   "pushed": "2026-08-15",
+   "days_since_push": 56,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [],
+   "branches": [
+    "claude/eos-internal-app-tasks-duoyqw",
+    "main"
+   ],
+   "recent_runs": [],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Mobil",
+   "pushed": "2026-08-15",
+   "days_since_push": 56,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "CallGuard – Android aplikácia na blokovanie hovorov (API 36)",
+     "head": "claude/android-call-blocking-app-gwpesz",
+     "updated": "2026-08-15",
+     "commits": 4,
+     "files": 68,
+     "additions": 3506,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/android-call-blocking-app-gwpesz",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "Build APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-15",
+     "event": "pull_request"
+    },
+    {
+     "name": "Build APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-15",
+     "event": "push"
+    },
+    {
+     "name": "Build APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-14",
+     "event": "pull_request"
+    },
+    {
+     "name": "Build APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-14",
+     "event": "push"
+    },
+    {
+     "name": "Build APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-08-14",
+     "event": "pull_request"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Hry-CK-DAKA",
+   "pushed": "2026-07-17",
+   "days_since_push": 85,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "Hry CK DAKA: offline aplikácia s 5 hrami + automatický build APK",
+     "head": "claude/ck-daka-offline-games-1nnypb",
+     "updated": "2026-07-17",
+     "commits": 7,
+     "files": 40,
+     "additions": 3429,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/ck-daka-offline-games-1nnypb",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "Build APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-07-17",
+     "event": "push"
+    },
+    {
+     "name": "Build APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-07-17",
+     "event": "push"
+    },
+    {
+     "name": "Build APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-07-17",
+     "event": "push"
+    },
+    {
+     "name": "Build APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-07-17",
+     "event": "push"
+    },
+    {
+     "name": "Build APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-07-17",
+     "event": "push"
+    }
+   ],
+   "default_branch": "claude/ck-daka-offline-games-1nnypb"
+  },
+  {
+   "repo": "Ck-daka",
+   "pushed": "2026-07-16",
+   "days_since_push": 86,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [],
+   "branches": [
+    "claude/loving-volta-bmwi1",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "Deploy náhľad (GitHub Pages)",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-11",
+     "event": "schedule"
+    },
+    {
+     "name": "Deploy náhľad (GitHub Pages)",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-10",
+     "event": "schedule"
+    },
+    {
+     "name": "Deploy náhľad (GitHub Pages)",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-10",
+     "event": "schedule"
+    },
+    {
+     "name": "Deploy náhľad (GitHub Pages)",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-10",
+     "event": "schedule"
+    },
+    {
+     "name": "Deploy náhľad (GitHub Pages)",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-10",
+     "event": "schedule"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Bus-syst-m-test",
+   "pushed": "2026-06-04",
+   "days_since_push": 128,
+   "commits_7d": 0,
+   "commits_30d": 0,
+   "open_prs": [],
+   "branches": [],
+   "recent_runs": [],
+   "default_branch": "main"
+  }
+ ]
+}
