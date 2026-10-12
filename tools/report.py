@@ -1,24 +1,40 @@
-import json, datetime, html, sys
-sys.path.insert(0, ".")
-from assess import A
-d = {r["repo"]: r for r in json.load(open("repos.json"))}
-today = datetime.date(2026, 10, 11)
+#!/usr/bin/env python3
+"""Generuje HTML report zo snímku repos.json, hodnotenia state/assessment.json a týždenných poznámok
+state/weekly_notes.json (sekcie „Čo sa zmenilo“ a „Čo potrebuje tvoje rozhodnutie“).
+
+Spustenie z priečinka tools/:  python3 report.py [RRRR-MM-DD]   (bez argumentu = dnešný dátum)
+Výstup: ../reports/Stav_aplikacii_RRRR-MM-DD.html
+"""
+import json, datetime, html, sys, os
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+ROOT = os.path.dirname(HERE)
+today = datetime.date.fromisoformat(sys.argv[1]) if len(sys.argv) > 1 else datetime.date.today()
+
+d = {r["repo"]: r for r in json.load(open(os.path.join(HERE, "repos.json")))}
+A = json.load(open(os.path.join(ROOT, "state", "assessment.json")))
+N = json.load(open(os.path.join(ROOT, "state", "weekly_notes.json")))
 
 KAT = {
  "AKTIVNY": ("Aktívny vývoj", "#669B41", "commity za posledných 7 dní"),
  "AUTO": ("Beží automaticky", "#1B3665", "naplánované behy, bez ručnej práce"),
  "CAKA_TEBA": ("Hotové, čaká na teba", "#E0A100", "práca je v otvorenom PR, chýba rozhodnutie alebo nasadenie"),
- "NASADENE": ("Hotové / bez aktivity", "#5B6B8A", "zlúčené do main, viac ako 30 dní bez zmeny"),
+ "NASADENE": ("Hotové / bez aktivity", "#5B6B8A", "zlúčené alebo v prevádzke, viac ako 30 dní bez zmeny"),
  "ZAMRZNUTE": ("Zamrznuté", "#C0392B", "dlhšie bez pohybu a nejasné pokračovanie"),
  "PRAZDNE": ("Prázdne", "#999", "bez obsahu"),
 }
 order = ["AKTIVNY", "AUTO", "CAKA_TEBA", "ZAMRZNUTE", "NASADENE", "PRAZDNE"]
 counts = {k: sum(1 for v in A.values() if v["kat"] == k) for k in order}
 total_prs = sum(len(r["open_prs"]) for r in d.values())
+draft_prs = sum(1 for r in d.values() for p in r["open_prs"] if p.get("draft"))
 c7 = sum(r["commits_7d"] for r in d.values())
 c30 = sum(r["commits_30d"] for r in d.values())
+week_ago = (today - datetime.timedelta(days=7)).isoformat()
+failed_runs = sum(1 for r in d.values() for x in r["recent_runs"]
+                  if x["conclusion"] in ("failure", "cancelled", "timed_out") and x["date"] >= week_ago)
 
-def e(s): return html.escape(str(s))
+def e(s):
+    return html.escape(str(s)).replace("–", "-").replace("—", "-")
 
 def card(repo):
     r, a = d[repo], A[repo]
@@ -43,21 +59,19 @@ sections = ""
 for k in order:
     items = [repo for repo in A if A[repo]["kat"] == k]
     items.sort(key=lambda x: d[x]["days_since_push"])
-    if not items: continue
+    if not items:
+        continue
     name, color, desc = KAT[k]
     sections += f'<section><h2 style="color:{color}">{e(name)} <small>{len(items)} · {e(desc)}</small></h2>{"".join(card(x) for x in items)}</section>'
 
-tiles = "".join(f'<div class="tile" style="border-top:4px solid {KAT[k][1]}"><div class="n">{counts[k]}</div><div class="l">{e(KAT[k][0])}</div></div>' for k in order)
+tiles = "".join(f'<div class="tile" style="border-top:4px solid {KAT[k][1]}"><div class="n">{counts[k]}</div><div class="l">{e(KAT[k][0])}</div></div>' for k in order if counts[k])
 
-top = """
-<ol>
-<li><b>Nahrať AAB 1.5 klientskej appky CK DAKA do Google Play Console</b> - appka je hotová po fázu 13, čaká len na teba.</li>
-<li><b>Preveriť denný beh Tipy</b> - naplánovaná úloha hlási úspech, ale repozitár je bez zmeny od 5. 9. Pravdepodobne nebeží.</li>
-<li><b>Pozrieť zrušený beh monitoringu konkurencie z 5. 10.</b>, aby pondelok 12. 10. prebehol celý.</li>
-<li><b>Účtovník / InvoiceFlow / E-faktúra</b> - tri prekrývajúce sa finančné projekty v draft PR, spolu bez rozhodnutia; určiť jeden a ostatné zlúčiť alebo zavrieť.</li>
-<li><b>Publikovať Posledná stopa</b> - TestFlight workflow a Play Store checklist sú pripravené.</li>
-<li><b>Upratať</b>: """ + str(total_prs) + """ draft PR nie je zlúčených do main (väčšina repozitárov má v main len README), vymazať Bus-syst-m-test, zvážiť archiváciu ckdaka-app a prepnutie verejného banner-generator na private.</li>
-</ol>"""
+def clean(s):
+    return s.replace("–", "-").replace("—", "-")
+
+zmeny = "".join(f"<li>{clean(x)}</li>" for x in N["zmeny"])
+rozhodnutia = "".join(f"<li>{clean(x)}</li>" for x in N["rozhodnutia"])
+pr_label = "všetky draft" if draft_prs == total_prs else f"{draft_prs} draft"
 
 page = f'''<!doctype html><html lang="sk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Stav aplikácií - {today.strftime("%d.%m.%Y")}</title>
@@ -69,8 +83,10 @@ header.top h1{{margin:0;font-size:26px}}header.top p{{margin:6px 0 0;opacity:.85
 main{{max-width:1100px;margin:0 auto;padding:20px 16px 60px}}
 .tiles{{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}}
 .tile{{background:#fff;border-radius:10px;padding:14px;box-shadow:0 1px 3px rgba(0,0,0,.08)}}.tile .n{{font-size:32px;font-weight:700}}.tile .l{{color:var(--muted);font-size:13px}}
-.summary{{background:#fff;border-radius:10px;padding:18px 22px;box-shadow:0 1px 3px rgba(0,0,0,.08)}}
-.summary ol li{{margin:8px 0}}
+.summary{{background:#fff;border-radius:10px;padding:18px 22px;box-shadow:0 1px 3px rgba(0,0,0,.08);margin-bottom:16px}}
+.summary ol li,.summary ul li{{margin:8px 0}}
+.summary.changes{{border-left:6px solid var(--green)}}.summary.decide{{border-left:6px solid #E0A100}}
+.note{{color:var(--muted);font-size:13px;margin:0 0 8px}}
 h2{{margin:34px 0 12px;font-size:21px}}h2 small{{font-weight:400;color:var(--muted);font-size:14px;margin-left:8px}}
 .card{{background:#fff;border-radius:10px;border-left:6px solid;padding:16px 20px;margin:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}}
 .card header{{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}}
@@ -84,13 +100,15 @@ h2{{margin:34px 0 12px;font-size:21px}}h2 small{{font-weight:400;color:var(--mut
 footer{{text-align:center;color:var(--muted);font-size:12px;padding:20px}}
 @media print{{.card{{break-inside:avoid}}}}
 </style></head><body>
-<header class="top"><h1>Stav aplikácií postavených cez Claude Code</h1><p>Týždenný prehľad k {today.strftime("%d. %m. %Y")} · 35 repozitárov pod kontom konatel-code · zdroj: GitHub API (commity, vetvy, PR, CI, README)</p></header>
+<header class="top"><h1>Stav aplikácií postavených cez Claude Code</h1><p>Týždenný prehľad k {today.strftime("%d. %m. %Y")} · {len(d)} repozitárov pod kontom konatel-code · zdroj: GitHub API (commity, vetvy, PR, CI, README) a naplánované úlohy</p></header>
 <main>
-<div class="tiles">{tiles}<div class="tile" style="border-top:4px solid var(--green)"><div class="n">{c7} / {c30}</div><div class="l">commitov za 7 / 30 dní</div></div><div class="tile" style="border-top:4px solid #E0A100"><div class="n">{total_prs}</div><div class="l">otvorených PR (všetky draft)</div></div></div>
-<div class="summary"><h2 style="margin-top:0">Čo potrebuje tvoje rozhodnutie tento týždeň</h2>{top}</div>
+<div class="tiles">{tiles}<div class="tile" style="border-top:4px solid var(--green)"><div class="n">{c7} / {c30}</div><div class="l">commitov za 7 / 30 dní</div></div><div class="tile" style="border-top:4px solid #E0A100"><div class="n">{total_prs}</div><div class="l">otvorených PR ({pr_label})</div></div><div class="tile" style="border-top:4px solid #C0392B"><div class="n">{failed_runs}</div><div class="l">neúspešných CI behov za 7 dní</div></div></div>
+<div class="summary changes"><h2 style="margin-top:0">Čo sa zmenilo od minulého týždňa</h2><p class="note">{e(N.get("porovnanie",""))}</p><ul>{zmeny}</ul></div>
+<div class="summary decide"><h2 style="margin-top:0">Čo potrebuje tvoje rozhodnutie tento týždeň</h2><ol>{rozhodnutia}</ol></div>
 {sections}
 </main>
-<footer>Report vygenerovaný automaticky - Claude pre CK DAKA · {datetime.datetime.now().strftime("%d.%m.%Y %H:%M")} · kategórie sú odvodené z aktivity v GitHube a z obsahu commitov; pri položkách „z repozitára nevidno“ chýba informácia mimo kódu.</footer>
+<footer>Report vygenerovaný automaticky - Claude pre CK DAKA · {datetime.datetime.now().strftime("%d.%m.%Y %H:%M")} UTC · kategórie sú odvodené z aktivity v GitHube, z obsahu commitov a z naplánovaných úloh; pri položkách „z repozitára nevidno“ chýba informácia mimo kódu.</footer>
 </body></html>'''
-open("Stav_aplikacii_2026-10-11.html", "w").write(page)
-print(counts, c7, c30, total_prs)
+out = os.path.join(ROOT, "reports", f"Stav_aplikacii_{today.isoformat()}.html")
+open(out, "w").write(page)
+print(out, counts, "c7", c7, "c30", c30, "prs", total_prs, "failed", failed_runs)

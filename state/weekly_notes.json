@@ -1,0 +1,24 @@
+{
+ "generated": "2026-10-12",
+ "porovnanie": "Porovnanie je oproti snímku z 11. 10. 2026 (prvý beh nástroja) a oproti stavu commitov za posledných 7 dní.",
+ "zmeny": [
+  "<b>Kvíz</b> - 11. 10. dva commity do PR #17 (161 commitov): opravy z prvého skutočného kvízu na zájazde a bezpečnostný audit (opravený XSS cez názov tímu na moderátorskej obrazovke, brzda na hádanie hesla, CSP a bezpečnostné hlavičky, 22 útočných testov). Otvorené zostáva: z kviz.daka.sk sa stále dajú stiahnuť banky otázok aj kód.",
+  "<b>DJ Imi</b> - 11. 10. vznikla nová služba <b>DJWish (djwish.app)</b> pre viacerých DJ-ov: stránka DJ-a s QR želaniami, 10 jazykov, predplatné 4,99 EUR/mes. alebo 49 EUR/rok, superadmin. K tomu bezpečnostný audit oboch aplikácií (testy 56/56 a 24/24), VOP a dokumenty GDPR. djimi.sk sa nemení.",
+  "<b>Koleso šťastia</b> - overené priamo v databáze CK DAKA: 1 255 točení kolesa od 29. 9. do 10. 10., kódy KOLESO sa používajú v objednávkach. Akcia beží naživo, preto sa kategória mení z „čaká na teba“ na „hotové / nasadené“. Kód je stále len v draft PR, main obsahuje len README.",
+  "<b>Bus-syst-m-test</b> - z prázdneho repozitára sa 11. 10. stal domov tohto monitorovacieho nástroja (collect.py, report.py, stav, reporty). Repozitár je verejný.",
+  "<b>Medveďomer</b> - denná analýza médií prebehla 7 dní po sebe úspešne, každý deň vznikol commit (posledný 11. 10.). <b>Sprievodca výberom zájazdov</b> - automatický náhľad sa nasadil aj dnes ráno, úspešne.",
+  "<b>Žiadne zlúčené ani nové PR.</b> Všetkých 17 otvorených PR zostáva draft. 27 z 35 repozitárov je bez jediného commitu ďalší týždeň; GhostDash, CK DAKA App, MimicChain, Posledná stopa, Koleso šťastia a Recommender stoja od 7. 10.",
+  "<b>Presuny medzi kategóriami:</b> Posledná stopa z „aktívny“ do „čaká na teba“ (hotová, čaká na publikovanie); Tipy z „beží automaticky“ do „zamrznuté“ (úloha 37 dní nič neprodukuje); KARAVIO, baDAKAteľ a Hry CK DAKA z „čaká na teba“ do „zamrznuté“ (50 až 87 dní bez rozhodnutia).",
+  "<b>CI a zlyhané behy:</b> Monitoring konkurencie (Web-aplik-cia) skončil 28. 9. aj 5. 10. ako <b>cancelled po presne 350 minútach</b> - naráža na timeout workflow. GhostDash Android CI a Intime iOS CI zlyhávali 7. 10. opakovane, posledné behy sú už zelené. Posledná stopa: iOS build 3. 10. raz zlyhal, potom prešiel. Od snímku z 11. 10. nepribudlo žiadne nové zlyhanie.",
+  "<b>Naplánované úlohy:</b> „Tipy - denný beh“ aj „CK DAKA - týždenná kontrola po cron behu“ hlásia úspech, ale každý beh trvá pár milisekúnd - doručujú sa do starých relácií, ktoré už nič nerobia, a v repozitároch nevznikajú commity. „Týždenný report predajov CK DAKA“ 5. 10. prebehol úspešne (trval 10 h 42 min), ďalší beh dnes 05:04 UTC."
+ ],
+ "rozhodnutia": [
+  "<b>Kvíz - dokončiť zabezpečenie na Plesku.</b> Appka je živá a podľa auditu z 11. 10. sa z kviz.daka.sk stále dajú stiahnuť obe banky otázok aj kód. Zadanie pre Plesk je v BEZPECNOST.md v repozitári Kviz.",
+  "<b>Nahrať AAB 1.5 klientskej appky CK DAKA do Google Play Console.</b> Pripravený od 7. 10., z repozitára nevidno, že by sa to stalo.",
+  "<b>Monitoring konkurencie padá na timeout.</b> Dva pondelky po sebe skončil beh ako cancelled po 350 minútach; dnešný beh štartoval 05:00 UTC. Treba dať skrátiť beh (menej konkurentov na jeden beh alebo rozdelenie) a kontrolnú úlohu vytvoriť nanovo, lebo tá súčasná reálne nič nekontroluje.",
+  "<b>Tipy - zrušiť alebo znovu vytvoriť naplánovanú úlohu.</b> Hlási úspech každý deň, ale od 5. 9. nevznikol žiadny tip ani commit. Dnešná úloha je mŕtva, len sa doručuje do zaniknutej relácie.",
+  "<b>Prepnúť dva verejné repozitáre na private:</b> Bus-syst-m-test (obsahuje tento interný prehľad všetkých projektov) a banner-generator.",
+  "<b>DJWish - rozhodnúť, či ju spustiť komerčne.</b> Služba s predplatným je hotová vrátane VOP a GDPR, chýba nasadenie na Plesk (návod je v repozitári) a tvoje áno alebo nie.",
+  "<b>Upratať zamrznuté projekty.</b> Účtovník / InvoiceFlow / E-faktúra sa prekrývajú a bez rozhodnutia stoja 10 až 36 dní; KARAVIO, baDAKAteľ a Hry CK DAKA stoja 53 až 87 dní. Pri každom určiť: pokračovať, zlúčiť, alebo zavrieť PR."
+ ]
+}
