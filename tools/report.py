@@ -64,7 +64,7 @@ for k in order:
     name, color, desc = KAT[k]
     sections += f'<section><h2 style="color:{color}">{e(name)} <small>{len(items)} · {e(desc)}</small></h2>{"".join(card(x) for x in items)}</section>'
 
-tiles = "".join(f'<div class="tile" style="border-top:4px solid {KAT[k][1]}"><div class="n">{counts[k]}</div><div class="l">{e(KAT[k][0])}</div></div>' for k in order if counts[k])
+tiles = "".join(f'<div class="tile" style="border-top:4px solid {KAT[k][1]}"><div class="n">{counts[k]}</div><div class="l">{e(KAT[k][0])}</div></div>' for k in order if counts[k] or k == "AKTIVNY")
 
 def clean(s):
     return s.replace("–", "-").replace("—", "-")

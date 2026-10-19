@@ -1,11 +1,11 @@
 {
- "generated": "2026-10-11",
+ "generated": "2026-10-19",
  "repos": [
   {
    "repo": "Medved",
-   "pushed": "2026-10-11",
+   "pushed": "2026-10-18",
    "days_since_push": 0,
-   "commits_7d": 8,
+   "commits_7d": 7,
    "commits_30d": 30,
    "open_prs": [],
    "branches": [
@@ -17,35 +17,35 @@
      "name": "Nasadenie na GitHub Pages",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-11",
+     "date": "2026-10-18",
      "event": "workflow_dispatch"
     },
     {
      "name": "Denná analýza médií",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-11",
+     "date": "2026-10-18",
      "event": "schedule"
     },
     {
      "name": "Nasadenie na GitHub Pages",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-10",
+     "date": "2026-10-17",
      "event": "workflow_dispatch"
     },
     {
      "name": "Denná analýza médií",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-10",
+     "date": "2026-10-17",
      "event": "schedule"
     },
     {
      "name": "Nasadenie na GitHub Pages",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-09",
+     "date": "2026-10-16",
      "event": "workflow_dispatch"
     }
    ],
@@ -54,8 +54,8 @@
   {
    "repo": "Intime",
    "pushed": "2026-10-08",
-   "days_since_push": 3,
-   "commits_7d": 3,
+   "days_since_push": 11,
+   "commits_7d": 0,
    "commits_30d": 4,
    "open_prs": [],
    "branches": [
@@ -104,8 +104,8 @@
   {
    "repo": "GhostDash",
    "pushed": "2026-10-07",
-   "days_since_push": 3,
-   "commits_7d": 10,
+   "days_since_push": 11,
+   "commits_7d": 0,
    "commits_30d": 18,
    "open_prs": [
     {
@@ -166,9 +166,9 @@
   {
    "repo": "CK-DAKA-app",
    "pushed": "2026-10-07",
-   "days_since_push": 3,
-   "commits_7d": 4,
-   "commits_30d": 5,
+   "days_since_push": 11,
+   "commits_7d": 0,
+   "commits_30d": 4,
    "open_prs": [
     {
      "n": 1,
@@ -238,9 +238,9 @@
   {
    "repo": "Mimicchain",
    "pushed": "2026-10-07",
-   "days_since_push": 3,
+   "days_since_push": 11,
    "commits_7d": 0,
-   "commits_30d": 1,
+   "commits_30d": 0,
    "open_prs": [
     {
      "n": 1,
@@ -300,8 +300,8 @@
   {
    "repo": "Textovka",
    "pushed": "2026-10-07",
-   "days_since_push": 3,
-   "commits_7d": 1,
+   "days_since_push": 11,
+   "commits_7d": 0,
    "commits_30d": 3,
    "open_prs": [
     {
@@ -362,8 +362,8 @@
   {
    "repo": "ckdaka-recommender",
    "pushed": "2026-10-07",
-   "days_since_push": 3,
-   "commits_7d": 1,
+   "days_since_push": 11,
+   "commits_7d": 0,
    "commits_30d": 1,
    "open_prs": [],
    "branches": [
@@ -384,7 +384,7 @@
   {
    "repo": "Koleso-astia",
    "pushed": "2026-10-07",
-   "days_since_push": 3,
+   "days_since_push": 11,
    "commits_7d": 0,
    "commits_30d": 1,
    "open_prs": [
@@ -409,10 +409,10 @@
   },
   {
    "repo": "DJ-IMI",
-   "pushed": "2026-10-07",
-   "days_since_push": 3,
-   "commits_7d": 4,
-   "commits_30d": 10,
+   "pushed": "2026-10-11",
+   "days_since_push": 7,
+   "commits_7d": 0,
+   "commits_30d": 12,
    "open_prs": [],
    "branches": [
     "ccr-ab1e9307-9lukbs"
@@ -422,16 +422,30 @@
   },
   {
    "repo": "Web-aplik-cia",
-   "pushed": "2026-10-05",
-   "days_since_push": 5,
+   "pushed": "2026-10-12",
+   "days_since_push": 6,
    "commits_7d": 1,
-   "commits_30d": 9,
+   "commits_30d": 8,
    "open_prs": [],
    "branches": [
     "claude/travel-agency-competitor-analysis-bri7r7",
     "main"
    ],
    "recent_runs": [
+    {
+     "name": "pages build and deployment",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-12",
+     "event": "dynamic"
+    },
+    {
+     "name": "Týždenný monitoring konkurencie",
+     "status": "completed",
+     "conclusion": "cancelled",
+     "date": "2026-10-12",
+     "event": "schedule"
+    },
     {
      "name": "pages build and deployment",
      "status": "completed",
@@ -452,39 +466,25 @@
      "conclusion": "success",
      "date": "2026-09-28",
      "event": "dynamic"
-    },
-    {
-     "name": "Týždenný monitoring konkurencie",
-     "status": "completed",
-     "conclusion": "success",
-     "date": "2026-09-28",
-     "event": "workflow_dispatch"
-    },
-    {
-     "name": "pages build and deployment",
-     "status": "completed",
-     "conclusion": "success",
-     "date": "2026-09-28",
-     "event": "dynamic"
     }
    ],
    "default_branch": "main"
   },
   {
    "repo": "Kviz",
-   "pushed": "2026-10-04",
-   "days_since_push": 6,
-   "commits_7d": 6,
-   "commits_30d": 26,
+   "pushed": "2026-10-11",
+   "days_since_push": 7,
+   "commits_7d": 0,
+   "commits_30d": 28,
    "open_prs": [
     {
      "n": 17,
      "title": "Zmeny po hre, banka na 300 tém, univerzálna verzia /kviz, heslo pre moderátora a kvízy pre zájazdy CK DAKA",
      "head": "claude/quiz-app-teams-iiddm9",
-     "updated": "2026-10-04",
-     "commits": 159,
-     "files": 94,
-     "additions": 152928,
+     "updated": "2026-10-11",
+     "commits": 161,
+     "files": 100,
+     "additions": 155164,
      "draft": true,
      "mergeable": "clean"
     }
@@ -499,7 +499,7 @@
   {
    "repo": "Uctovnik",
    "pushed": "2026-10-02",
-   "days_since_push": 8,
+   "days_since_push": 16,
    "commits_7d": 0,
    "commits_30d": 1,
    "open_prs": [
@@ -561,7 +561,7 @@
   {
    "repo": "Kontrola-fakt-r",
    "pushed": "2026-09-10",
-   "days_since_push": 30,
+   "days_since_push": 38,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -609,7 +609,7 @@
   {
    "repo": "TV-v-autobusoch",
    "pushed": "2026-09-09",
-   "days_since_push": 31,
+   "days_since_push": 39,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -659,7 +659,7 @@
   {
    "repo": "Bus-syst-m",
    "pushed": "2026-09-07",
-   "days_since_push": 33,
+   "days_since_push": 41,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -734,7 +734,7 @@
   {
    "repo": "Kalinkovo-v-mobile",
    "pushed": "2026-09-07",
-   "days_since_push": 33,
+   "days_since_push": 41,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -784,7 +784,7 @@
   {
    "repo": "Kalinkovo",
    "pushed": "2026-09-06",
-   "days_since_push": 34,
+   "days_since_push": 42,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -834,7 +834,7 @@
   {
    "repo": "Efaktura",
    "pushed": "2026-09-06",
-   "days_since_push": 34,
+   "days_since_push": 42,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -875,7 +875,7 @@
   {
    "repo": "Bus-aukcia",
    "pushed": "2026-09-06",
-   "days_since_push": 34,
+   "days_since_push": 42,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -931,7 +931,7 @@
   {
    "repo": "Tipy",
    "pushed": "2026-09-05",
-   "days_since_push": 36,
+   "days_since_push": 43,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -944,7 +944,7 @@
   {
    "repo": "MCP-CK-DAKA",
    "pushed": "2026-09-04",
-   "days_since_push": 36,
+   "days_since_push": 44,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -970,7 +970,7 @@
   {
    "repo": "Futbal",
    "pushed": "2026-09-01",
-   "days_since_push": 39,
+   "days_since_push": 47,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -1020,7 +1020,7 @@
   {
    "repo": "Bazar",
    "pushed": "2026-08-20",
-   "days_since_push": 51,
+   "days_since_push": 59,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -1084,7 +1084,7 @@
   {
    "repo": "Plaud",
    "pushed": "2026-08-20",
-   "days_since_push": 51,
+   "days_since_push": 59,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -1134,7 +1134,7 @@
   {
    "repo": "baDAKAtel",
    "pushed": "2026-08-20",
-   "days_since_push": 51,
+   "days_since_push": 59,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -1198,7 +1198,7 @@
   {
    "repo": "Task-app",
    "pushed": "2026-08-18",
-   "days_since_push": 53,
+   "days_since_push": 61,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -1212,7 +1212,7 @@
   {
    "repo": "ckdaka-app",
    "pushed": "2026-08-17",
-   "days_since_push": 54,
+   "days_since_push": 62,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -1225,7 +1225,7 @@
   {
    "repo": "banner-generator",
    "pushed": "2026-08-17",
-   "days_since_push": 54,
+   "days_since_push": 62,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -1287,7 +1287,7 @@
   {
    "repo": "vyplaty",
    "pushed": "2026-08-15",
-   "days_since_push": 56,
+   "days_since_push": 64,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -1300,7 +1300,7 @@
   {
    "repo": "QR-code",
    "pushed": "2026-08-15",
-   "days_since_push": 56,
+   "days_since_push": 64,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -1350,7 +1350,7 @@
   {
    "repo": "EOS",
    "pushed": "2026-08-15",
-   "days_since_push": 56,
+   "days_since_push": 64,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -1364,7 +1364,7 @@
   {
    "repo": "Mobil",
    "pushed": "2026-08-15",
-   "days_since_push": 56,
+   "days_since_push": 64,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -1426,7 +1426,7 @@
   {
    "repo": "Hry-CK-DAKA",
    "pushed": "2026-07-17",
-   "days_since_push": 85,
+   "days_since_push": 93,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -1488,7 +1488,7 @@
   {
    "repo": "Ck-daka",
    "pushed": "2026-07-16",
-   "days_since_push": 86,
+   "days_since_push": 94,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -1501,35 +1501,35 @@
      "name": "Deploy náhľad (GitHub Pages)",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-11",
+     "date": "2026-10-19",
      "event": "schedule"
     },
     {
      "name": "Deploy náhľad (GitHub Pages)",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-10",
+     "date": "2026-10-18",
      "event": "schedule"
     },
     {
      "name": "Deploy náhľad (GitHub Pages)",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-10",
+     "date": "2026-10-18",
      "event": "schedule"
     },
     {
      "name": "Deploy náhľad (GitHub Pages)",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-10",
+     "date": "2026-10-18",
      "event": "schedule"
     },
     {
      "name": "Deploy náhľad (GitHub Pages)",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-10",
+     "date": "2026-10-18",
      "event": "schedule"
     }
    ],
@@ -1537,12 +1537,14 @@
   },
   {
    "repo": "Bus-syst-m-test",
-   "pushed": "2026-06-04",
-   "days_since_push": 128,
-   "commits_7d": 0,
-   "commits_30d": 0,
+   "pushed": "2026-10-12",
+   "days_since_push": 6,
+   "commits_7d": 2,
+   "commits_30d": 3,
    "open_prs": [],
-   "branches": [],
+   "branches": [
+    "main"
+   ],
    "recent_runs": [],
    "default_branch": "main"
   }
