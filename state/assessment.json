@@ -4,7 +4,7 @@
   "typ": "Verejná komunitná web + Android appka",
   "oblast": "Osobné",
   "kat": "AUTO",
-  "stav": "Beží naplno. Denná analýza médií (cca 05:40 UTC) prebehla 12. až 18. 10. každý deň úspešne a každý deň vznikol commit 'Denná aktualizácia dát' (7 commitov za 7 dní). Dnešný beh ešte neprebehol (report sa generuje pred 05:30).",
+  "stav": "Beží naplno. Denná analýza médií prebehla 19. až 26. 10. každý deň úspešne (vrátane dnešného behu) a každý deň vznikol commit 'Denná aktualizácia dát' (7 commitov za 7 dní, 16 behov za týždeň bez jedinej chyby).",
   "caka": "Nič neblokuje. Vývojová vetva z 20. 8. (ikona labky) stále visí, zrejme už zapracovaná.",
   "krok": "Len sledovať denné behy; vymazať starú vetvu."
  },
@@ -22,7 +22,7 @@
   "typ": "Mobilná hra (Android + iOS, KMP, Firebase)",
   "oblast": "Hry",
   "kat": "CAKA_TEBA",
-  "stav": "M1 hrateľné jadro + Compose appka v draft PR #1 (69 commitov, 164 súborov). Od 7. 10. bez zmeny (12 dní), Android CI zelené. Presunuté z 'aktívny' do 'čaká na teba'.",
+  "stav": "M1 hrateľné jadro + Compose appka v draft PR #1 (69 commitov, 164 súborov). Od 7. 10. bez zmeny (19 dní), Android CI zelené. Druhý týždeň bez pohybu.",
   "caka": "PR #1 je draft, main je prázdny. iOS build závisí od verzie Kotlinu (GitLive 2.7 potrebuje novší Kotlin než 2.0.21).",
   "krok": "Dotiahnuť iOS build alebo ho dočasne vypnúť a zlúčiť M1 do main."
  },
@@ -31,7 +31,7 @@
   "typ": "Android + web (Capacitor, React), vlastný backend, MCP",
   "oblast": "CK DAKA",
   "kat": "CAKA_TEBA",
-  "stav": "Fázy 0-13 hotové v draft PR #1 (184 commitov, 349 súborov). 7. 10. podpísaný AAB verzia 1.5 pripravený na prvé nahratie do Play Console. Od 7. 10. bez zmeny (12 dní), CI aj web deploy zelené. Presunuté z 'aktívny' do 'čaká na teba'.",
+  "stav": "Fázy 0-13 hotové v draft PR #1 (184 commitov, 349 súborov). 7. 10. podpísaný AAB verzia 1.5 pripravený na prvé nahratie do Play Console. Od 7. 10. bez zmeny (19 dní), CI aj web deploy zelené. Druhý týždeň bez pohybu.",
   "caka": "Na teba: nahrať AAB 1.5 do Google Play Console - z repozitára nevidno, či sa to už stalo. 10 vedľajších vetiev (admin chat, OAuth, interný MCP endpoint) z augusta a septembra bez jasného stavu.",
   "krok": "Nahrať AAB do Play Console; upratať staré vetvy."
  },
@@ -40,7 +40,7 @@
   "typ": "Android appka + backend API + admin panel",
   "oblast": "Osobné",
   "kat": "CAKA_TEBA",
-  "stav": "MVP hotové v draft PR #1 (20 commitov, 439 súborov). Posledný commit 7. 10.: Plesk single-server deployment (compose, nginx, runbook). 12 dní bez zmeny.",
+  "stav": "MVP hotové v draft PR #1 (20 commitov, 439 súborov). Posledný commit 7. 10.: Plesk single-server deployment (compose, nginx, runbook). 19 dní bez zmeny.",
   "caka": "Na nasadenie na Plesk podľa runbooku a rozhodnutie zlúčiť PR do main (main obsahuje len README).",
   "krok": "Nasadiť na Plesk podľa runbooku; zlúčiť PR."
  },
@@ -49,7 +49,7 @@
   "typ": "Mobilná gamebook hra (Android + iOS + web)",
   "oblast": "Hry",
   "kat": "CAKA_TEBA",
-  "stav": "Hra hotová (11 koncov), iOS platforma a TestFlight workflow pridané 3. a 7. 10. Android APK aj web deploy zelené. Od 7. 10. bez zmeny (12 dní).",
+  "stav": "Hra hotová (11 koncov), iOS platforma a TestFlight workflow pridané 3. a 7. 10. Android APK aj web deploy zelené. Od 7. 10. bez zmeny (19 dní).",
   "caka": "Na publikovanie: Play Store (PLAY_STORE_CHECKLIST.md) a TestFlight. PR #1 stále draft, main prázdny.",
   "krok": "Spustiť TestFlight workflow a prejsť Play Store checklist."
  },
@@ -58,7 +58,7 @@
   "typ": "Odporúčací systém na web + personalizované e-maily (Python, PHP)",
   "oblast": "CK DAKA",
   "kat": "CAKA_TEBA",
-  "stav": "PR zlúčený 7. 10. (odporúčania na webe, unikátne e-maily podľa správania). Vo vetve je návod na nasadenie pre programátora a automatizácia importu odberateľov. 12 dní bez zmeny.",
+  "stav": "PR zlúčený 7. 10. (odporúčania na webe, unikátne e-maily podľa správania). Vo vetve je návod na nasadenie pre programátora a automatizácia importu odberateľov. 19 dní bez zmeny.",
   "caka": "Na nasadenie na web ckdaka.sk - integrácia integration.php + tracker.js patrí programátorovi/ui42. Z repozitára nevidno, či už beží.",
   "krok": "Odovzdať návod na nasadenie programátorovi a dohodnúť termín."
  },
@@ -66,35 +66,35 @@
   "nazov": "Koleso šťastia CK DAKA",
   "typ": "Web akcia - automatický výber, kódy v DB, losovanie na serveri",
   "oblast": "CK DAKA",
-  "kat": "NASADENE",
-  "stav": "Akcia beží naživo: v databáze CK DAKA je 569 točení v sobotu 10. 10. a 477 točení v sobotu 17. 10. (overené dnes cez konektor CK_DAKA). Kód je stále len v draft PR #1 (9 commitov), main obsahuje len README. Posledná úprava 7. 10.",
-  "caka": "Nič neblokuje prevádzku. Pre poriadok zlúčiť PR do main. Prehľad víkendu 17.-18. 10. ti dnes o 07:00 UTC pošle samostatná naplánovaná úloha. Pozor: zľava ZIMA skončila 18. 10., sobota 24. 10. bude prvá bez nej.",
-  "krok": "Zlúčiť PR #1; po víkende 24.-25. 10. porovnať počet točení bez akcie ZIMA."
+  "kat": "AKTIVNY",
+  "stav": "Akcia beží naživo a tento týždeň sa na nej pracovalo: 24. 10. pribudol do draft PR #1 commit, ktorý obchádza ročnú cache prehliadača pre koleso-data.js (server posiela max-age 1 rok, takže prehliadač z minulého týždňa ukazoval starú ponuku a hlášku 'Koleso šťastia sa pripravuje'; index.html teraz načítava dáta s verziou v adrese, NASADENIE.md má odporúčané nastavenie cache pre nginx). V databáze CK DAKA je 448 točení v sobotu 24. 10. (prvá sobota bez zľavy ZIMA), 17. 10. ich bolo 477, 10. 10. 569 a 3. 10. 684 - štvrtý týždeň pokles. Kód je stále len v draft PR #1 (10 commitov), main obsahuje len README.",
+  "caka": "Z repozitára nevidno, či je oprava cache už nahratá na web a či je nastavený nginx podľa NASADENIE.md. Pre poriadok zlúčiť PR do main.",
+  "krok": "Overiť na webe, že koleso načítava aktuálne dáta (oprava z 24. 10.); nastaviť cache pre /koleso/ podľa NASADENIE.md; zlúčiť PR #1."
  },
  "DJ-IMI": {
   "nazov": "DJ Imi - wish list pesničiek",
   "typ": "Malá Node.js webová appka s QR kódom a adminom",
   "oblast": "Osobné",
-  "kat": "CAKA_TEBA",
-  "stav": "Posledný push 11. 10. (DJWish - nová služba pre viacerých DJ-ov s predplatným, bezpečnostný audit, VOP a GDPR). Odvtedy 8 dní bez zmeny. Presunuté z 'aktívny' do 'čaká na teba'.",
-  "caka": "Na nasadenie DJWish na Plesk (návod s Let's Encrypt je v repozitári) a rozhodnutie, či ju ponúkať komerčne. Repo má len jednu vetvu ccr-..., bez main. Z repozitára nevidno, či djimi.sk beží.",
-  "krok": "Rozhodnúť o spustení djwish.app; premenovať vetvu na main."
+  "kat": "AKTIVNY",
+  "stav": "24. 10. pribudol commit do návodu djwish/NASADENIE-PLESK.md (IPv6 AAAA záznam len s priradenou IPv6 v Plesku, kontrola certifikátu na všetkých IP) - vyzerá to, že nasadenie DJWish na Plesk sa reálne rieši. Predtým 11. 10. DJWish (služba pre viacerých DJ-ov s predplatným, bezpečnostný audit, VOP a GDPR). Presunuté z 'čaká na teba' späť do 'aktívny'.",
+  "caka": "Z repozitára nevidno, či djwish.app už beží. Repo má len jednu vetvu ccr-..., bez main. Rozhodnutie, či službu ponúkať komerčne, stále nie je v repozitári zachytené.",
+  "krok": "Dokončiť nasadenie na Plesk; rozhodnúť o komerčnom spustení djwish.app; premenovať vetvu na main."
  },
  "Web-aplik-cia": {
   "nazov": "Týždenný monitoring konkurencie",
   "typ": "Python + GitHub Actions, report na GitHub Pages",
   "oblast": "CK DAKA",
   "kat": "AUTO",
-  "stav": "Problém sa opakuje tretí pondelok po sebe: beh 12. 10. skončil ako cancelled po 350 minútach (timeout-minutes 350). Z logu: 44 plných analýz trvalo 3 h 12 min (05:09-08:21, s chybami ReadTimeout z API), potom aktualizácie bežia cca 4 minúty na zájazd a vo fronte ich bolo 250 - stihlo sa 34, zvyšných 216 nie. Celý beh by potreboval vyše 17 hodín. Report 2026-10-12 sa commitol, ale je neúplný a e-mail sa neodoslal (proces bol zabitý pred odoslaním). Dnešný beh štartuje 05:00 UTC a dopadne rovnako, kým sa nič nezmení. Kontrolná naplánovaná úloha 'týždenná kontrola po cron behu' 12. 10. opäť hlásila úspech po 12 ms - nič nekontroluje.",
-  "caka": "Na opravu workflow: cron beh ide ako jeden shard (shard_count 1). Workflow už podporuje shard_index/shard_count a --limit, ale len pri ručnom spustení. Treba buď rozdeliť cron na 4-5 paralelných shardov (matrix), alebo obmedziť aktualizácie na cca 60 zájazdov za beh (rotácia), alebo skrátiť čas na jednu aktualizáciu (4 min je veľa).",
-  "krok": "Otvoriť Claude Code nad repozitárom a dať prerobiť cron beh na paralelné shardy alebo rotáciu po 60 zájazdoch; kontrolnú úlohu vytvoriť nanovo ako samostatnú (nie do zaniknutej relácie)."
+  "stav": "Problém sa opakuje štvrtý pondelok po sebe: beh 19. 10. skončil ako cancelled po 350 minútach (timeout-minutes 350). Z logu: 42 plných analýz trvalo 3 h 05 min (05:02-08:07), potom aktualizácie známych ponúk po cca 4 minúty - stihlo sa 40 z 250, zvyšných 210 nie. Report 2026-10-19 sa commitol neúplný. Navyše z logu vidno, že premenné SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASSWORD a SMTP_FROM sú v workflow prázdne - e-mail by sa neodoslal ani pri úspešnom behu, lebo secrets v repozitári nie sú nastavené. Dnešný beh beží od 05:03 UTC ako jeden shard a dopadne rovnako. Kontrolná naplánovaná úloha 'týždenná kontrola po cron behu' 19. 10. opäť hlásila úspech po 8 ms - nič nekontroluje.",
+  "caka": "Na opravu workflow: cron beh ide ako jeden shard (shard_count 1). Workflow podporuje shard_index/shard_count a --limit, ale len pri ručnom spustení. Treba rozdeliť cron na 4-5 paralelných shardov (matrix) alebo obmedziť aktualizácie na cca 60 zájazdov za beh (rotácia). A doplniť SMTP secrets do repozitára, inak e-mail neodíde nikdy.",
+  "krok": "Otvoriť Claude Code nad repozitárom a dať prerobiť cron beh na paralelné shardy alebo rotáciu; nastaviť SMTP secrets; kontrolnú úlohu vytvoriť nanovo ako samostatnú."
  },
  "Kviz": {
   "nazov": "Kvíz (tímový kvíz + kvízy pre zájazdy)",
   "typ": "Node.js web, nasadené na kviz.daka.sk (Plesk)",
   "oblast": "CK DAKA",
   "kat": "CAKA_TEBA",
-  "stav": "Posledné commity 11. 10. (opravy z prvého kvízu na zájazde + bezpečnostný audit: XSS, brzda na hádanie hesla, CSP, 22 útočných testov). Odvtedy 8 dní bez zmeny. Nasadzuje sa priamo z vetvy claude/quiz-app-teams-iiddm9 na kviz.daka.sk. Presunuté z 'aktívny' do 'čaká na teba'.",
+  "stav": "Posledné commity 11. 10. (opravy z prvého kvízu na zájazde + bezpečnostný audit: XSS, brzda na hádanie hesla, CSP, 22 útočných testov). Odvtedy 15 dní bez zmeny. Nasadzuje sa priamo z vetvy claude/quiz-app-teams-iiddm9 na kviz.daka.sk.",
   "caka": "Na teba v Plesku: podľa BEZPECNOST.md sa z kviz.daka.sk stále dajú stiahnuť obe banky otázok aj kód - z repozitára nevidno, či sa to už opravilo. PR #17 (161 commitov) nie je zlúčený do main.",
   "krok": "Opraviť nastavenie Plesku podľa BEZPECNOST.md; zlúčiť PR #17."
  },
@@ -103,7 +103,7 @@
   "typ": "Účtovný systém podľa master špecifikácie",
   "oblast": "CK DAKA",
   "kat": "CAKA_TEBA",
-  "stav": "Kompletný základ v draft PR #1 (51 commitov, 1 205 súborov). Posledná oprava 2. 10., odvtedy 17 dní bez pohybu, main prázdny. CI zelené. Ak sa nič nestane, o 2 týždne spadne medzi zamrznuté.",
+  "stav": "Kompletný základ v draft PR #1 (51 commitov, 1 205 súborov). Posledná oprava 2. 10., odvtedy 24 dní bez pohybu, main prázdny. CI zelené. Ak sa do budúceho pondelka nič nestane, prejde medzi zamrznuté (30 dní).",
   "caka": "Na tvoju kontrolu a rozhodnutie, čo s ním ďalej. Prekrýva sa s Kontrola-fakt-r a Efaktura.",
   "krok": "Prejsť si stav oproti špecifikácii a určiť ďalšiu fázu."
  },
@@ -112,7 +112,7 @@
   "typ": "Discovery + doménové jadro, Plesk, čítanie DB CK DAKA, pokladničné doklady",
   "oblast": "CK DAKA",
   "kat": "ZAMRZNUTE",
-  "stav": "Fáza 0 v draft PR #1 (3 commity, 50 súborov) z 10. 9. Od vtedy 39 dní bez pohybu.",
+  "stav": "Fáza 0 v draft PR #1 (3 commity, 50 súborov) z 10. 9. Od vtedy 46 dní bez pohybu.",
   "caka": "Na tvoje rozhodnutie, či pokračovať fázou 1, alebo tému zlúčiť s Účtovníkom (prekrývajú sa).",
   "krok": "Rozhodnúť: pokračovať, zlúčiť s Účtovníkom, alebo zavrieť."
  },
@@ -121,7 +121,7 @@
   "typ": "Admin + API + worker + Player Agent (TypeScript, Go)",
   "oblast": "DAKA Transport",
   "kat": "NASADENE",
-  "stav": "MVP zlúčené do main 9. 9. (fáza 1 + časť fázy 2). V docs je zadanie pre Plesk. 40 dní bez zmeny.",
+  "stav": "MVP zlúčené do main 9. 9. (fáza 1 + časť fázy 2). V docs je zadanie pre Plesk. 47 dní bez zmeny.",
   "caka": "Na nasadenie na Plesk a prvé fyzické zariadenie v autobuse (Player Agent + Bosch). Z repozitára nevidno, či už beží.",
   "krok": "Potvrdiť, či je nasadené; ak nie, naplánovať pilot v jednom autobuse."
  },
@@ -130,7 +130,7 @@
   "typ": "Laravel/Vue - is.daka.sk; plus hra DAKA Cesta (Flutter)",
   "oblast": "DAKA Transport",
   "kat": "ZAMRZNUTE",
-  "stav": "Dva draft PR: #1 Objednávkový IS - zadanie, gap-analýza a referenčný build (585 súborov, 7. 9.) a #2 DAKA Cesta vernostná hra (15. 8.). 42 dní bez pohybu. Posledné commity sú incident report pre Wame (FlixBus kolízie sedadiel).",
+  "stav": "Dva draft PR: #1 Objednávkový IS - zadanie, gap-analýza a referenčný build (585 súborov, 7. 9.) a #2 DAKA Cesta vernostná hra (15. 8.). 49 dní bez pohybu. Posledné commity sú incident report pre Wame (FlixBus kolízie sedadiel).",
   "caka": "Na rozhodnutie o ďalšom postupe s dodávateľom Wame podľa incident reportu a gap-analýzy. DAKA Cesta čaká na rozhodnutie, či ju vôbec vydať.",
   "krok": "Uzavrieť incident s Wame; rozhodnúť o DAKA Cesta."
  },
@@ -139,7 +139,7 @@
   "typ": "Next.js PWA - tabuľa, push, nahlasovanie problémov; krajsiekalinkovo.sk",
   "oblast": "Kalinkovo",
   "kat": "NASADENE",
-  "stav": "MVP fáza 1 pre staging/pilot, PR #4 zlúčený 7. 9. 42 dní bez zmeny.",
+  "stav": "MVP fáza 1 pre staging/pilot, PR #4 zlúčený 7. 9. 49 dní bez zmeny.",
   "caka": "Na nasadenie na krajsiekalinkovo.sk a otvorené obsahové a právne rozhodnutia v docs/known-limitations.md. Z repozitára nevidno, či beží.",
   "krok": "Rozhodnúť, či spustiť pilot v obci."
  },
@@ -148,7 +148,7 @@
   "typ": "Next.js komunitná hra o rozpočte obce",
   "oblast": "Kalinkovo",
   "kat": "NASADENE",
-  "stav": "Hotové vrátane schválených právnych textov (PR #6, #7 z 6. 9.). 43 dní bez zmeny.",
+  "stav": "Hotové vrátane schválených právnych textov (PR #6, #7 z 6. 9.). 50 dní bez zmeny.",
   "caka": "Na nasadenie a zverejnenie na moje.krajsiekalinkovo.sk - z repozitára nevidno, či beží.",
   "krok": "Nasadiť alebo odložiť s jasným dátumom."
  },
@@ -157,7 +157,7 @@
   "typ": "Základ systému e-faktúr s mapperom CK DAKA",
   "oblast": "CK DAKA",
   "kat": "ZAMRZNUTE",
-  "stav": "Jeden commit v draft PR #1 (6. 9., 33 súborov). 43 dní bez pohybu. CI zelené.",
+  "stav": "Jeden commit v draft PR #1 (6. 9., 33 súborov). 50 dní bez pohybu. CI zelené.",
   "caka": "Na tvoje rozhodnutie, či pokračovať - súvisí s povinnou e-fakturáciou a s Účtovníkom.",
   "krok": "Rozhodnúť, či ide do Účtovníka ako modul."
  },
@@ -166,7 +166,7 @@
   "typ": "Reverzná aukcia autobusovej dopravy, Next.js + PostgreSQL",
   "oblast": "BidBus",
   "kat": "NASADENE",
-  "stav": "Posledný PR #20 (i18n, PM2) 6. 9. Funkcie: chat, Stripe záloha, 7 jazykov, dashboardy. 7 starých vetiev z júna a júla nie je zlúčených. 43 dní bez zmeny. Homepage repozitára ukazuje na bus-aukcia.vercel.app.",
+  "stav": "Posledný PR #20 (i18n, PM2) 6. 9. Funkcie: chat, Stripe záloha, 7 jazykov, dashboardy. 7 starých vetiev z júna a júla nie je zlúčených. 50 dní bez zmeny. Homepage repozitára ukazuje na bus-aukcia.vercel.app.",
   "caka": "Na obchodný rozbeh (dopravcovia a klienti), nie na kód.",
   "krok": "Vymazať staré vetvy; sledovať počet dopytov na bidbus.eu."
  },
@@ -175,7 +175,7 @@
   "typ": "Python, denný beh cez naplánovanú úlohu, dashboard na GitHub Pages",
   "oblast": "Osobné",
   "kat": "ZAMRZNUTE",
-  "stav": "Denná naplánovaná úloha (06:12 a 07:12 UTC) hlási každý deň úspech, naposledy 18. 10., ale beh trvá 23 ms - len sa doručí do starej relácie, ktorá už nič nerobí. Posledný commit v repozitári je 5. 9., teda 44 dní bez výsledku. Repo nemá vetvu main.",
+  "stav": "Denná naplánovaná úloha (06:12 a 07:12 UTC) hlási každý deň úspech, naposledy 25. 10., ale beh trvá 15 ms - len sa doručí do starej relácie, ktorá už nič nerobí. Posledný commit v repozitári je 5. 9., teda 51 dní bez výsledku. Repo nemá vetvu main. Druhý týždeň po sebe hlásené ako mŕtva úloha.",
   "caka": "Na tvoje rozhodnutie: buď úlohu zrušiť, alebo ju vytvoriť nanovo ako samostatnú úlohu (nie do zaniknutej relácie), ktorá si repozitár naklonuje a pushne.",
   "krok": "Zrušiť alebo znovu vytvoriť naplánovanú úlohu Tipy."
  },
@@ -184,7 +184,7 @@
   "typ": "MCP server nad databázou CK (TypeScript), OAuth",
   "oblast": "CK DAKA",
   "kat": "NASADENE",
-  "stav": "OAuth nasadený 2. 9., dokumentácia 4. 9. Konektory CK_DAKA aj is_daka_sk fungujú (dnešný report cez CK_DAKA overil točenia kolesa). Draft PR #1 (34 commitov) stále nie je zlúčený do main. 45 dní bez zmeny.",
+  "stav": "OAuth nasadený 2. 9., dokumentácia 4. 9. Konektory CK_DAKA aj is_daka_sk fungujú (dnešný report cez CK_DAKA overil točenia kolesa). Draft PR #1 (34 commitov) stále nie je zlúčený do main. 52 dní bez zmeny.",
   "caka": "Nič neblokuje. Zlúčiť PR do main pre poriadok.",
   "krok": "Zlúčiť PR #1."
  },
@@ -193,7 +193,7 @@
   "typ": "Multi-tenant platforma pre športové kluby, Laravel",
   "oblast": "Osobné / podnikanie",
   "kat": "NASADENE",
-  "stav": "Verejná úvodná stránka, registrácia klubu, obnova hesla, nasadenie cez Plesk (PR #5-#7, do 1. 9.). 48 dní bez zmeny.",
+  "stav": "Verejná úvodná stránka, registrácia klubu, obnova hesla, nasadenie cez Plesk (PR #5-#7, do 1. 9.). 55 dní bez zmeny.",
   "caka": "Na ďalší produktový krok (prvý reálny klub) a rozhodnutie, či pokračovať.",
   "krok": "Rozhodnúť o pokračovaní alebo zmrazení."
  },
@@ -202,7 +202,7 @@
   "typ": "Monorepo - API, web, worker, Android",
   "oblast": "Osobné / podnikanie",
   "kat": "ZAMRZNUTE",
-  "stav": "Bootstrap platformy v draft PR #1 (35 commitov, 252 súborov), mobil v0.2.2. Od 20. 8. bez pohybu (60 dní), main prázdny.",
+  "stav": "Bootstrap platformy v draft PR #1 (35 commitov, 252 súborov), mobil v0.2.2. Od 20. 8. bez pohybu (67 dní), main prázdny.",
   "caka": "Na tvoje rozhodnutie, či projekt pokračuje (súvisí s prenájmom karavanov).",
   "krok": "Rozhodnúť: pokračovať alebo archivovať."
  },
@@ -211,7 +211,7 @@
   "typ": "Prepis a zhrnutie rozhovorov, TypeScript, Google STT, Docker",
   "oblast": "CK DAKA",
   "kat": "NASADENE",
-  "stav": "Posledné opravy 18. až 20. 8. (dlhé nahrávky cez ffmpeg, Google STT sk-SK). 60 dní bez zmeny.",
+  "stav": "Posledné opravy 18. až 20. 8. (dlhé nahrávky cez ffmpeg, Google STT sk-SK). 67 dní bez zmeny.",
   "caka": "Na nasadenie do produkcie (docker-compose.prod) a reálne používanie na pobočkách. Z repozitára nevidno, či sa používa.",
   "krok": "Rozhodnúť, či nasadiť pre predajcov."
  },
@@ -220,7 +220,7 @@
   "typ": "Herný backend, mapa sveta, denná hra, passport",
   "oblast": "CK DAKA",
   "kat": "ZAMRZNUTE",
-  "stav": "MVP v draft PR #1 (21 commitov, 225 súborov), deploy vetvy pre API aj web, návod pre Plesk. 60 dní bez pohybu.",
+  "stav": "MVP v draft PR #1 (21 commitov, 225 súborov), deploy vetvy pre API aj web, návod pre Plesk. 67 dní bez pohybu.",
   "caka": "Na nasadenie na Plesk a rozhodnutie, či patrí do stratégie omladenia klientely (DAKA Go).",
   "krok": "Rozhodnúť v rámci DAKA Go 2027."
  },
@@ -229,7 +229,7 @@
   "typ": "Interná PWA na úlohy podľa pobočiek, Node.js",
   "oblast": "CK DAKA",
   "kat": "NASADENE",
-  "stav": "Hotové, PR #4 a #5 (push upozornenia, hľadanie) do 18. 8. 62 dní bez zmeny.",
+  "stav": "Hotové, PR #4 a #5 (push upozornenia, hľadanie) do 18. 8. 69 dní bez zmeny.",
   "caka": "Na nasadenie a zavedenie na pobočkách - z repozitára nevidno, či ju tím používa.",
   "krok": "Overiť používanie; ak nie, rozhodnúť o zavedení alebo zrušení."
  },
@@ -238,7 +238,7 @@
   "typ": "Next.js 15 PWA, 100+ DB modelov, Vercel",
   "oblast": "CK DAKA",
   "kat": "ZAMRZNUTE",
-  "stav": "3 commity, posledný 17. 8. Bez CI, bez vetiev. Prekrýva sa s CK-DAKA-app. 63 dní bez zmeny.",
+  "stav": "3 commity, posledný 17. 8. Bez CI, bez vetiev. Prekrýva sa s CK-DAKA-app. 70 dní bez zmeny.",
   "caka": "Na rozhodnutie, či archivovať v prospech CK-DAKA-app.",
   "krok": "Archivovať alebo zlúčiť nápady do CK-DAKA-app."
  },
@@ -247,7 +247,7 @@
   "typ": "HTML/JS + PHP proxy, Netlify; verejný repozitár",
   "oblast": "CK DAKA",
   "kat": "ZAMRZNUTE",
-  "stav": "Základ na Netlify z júna. Draft PR #1 (17. 8.): automatické bannery z feedu, produktové feedy, nahrávanie do reklamných platforiem, návod na presun na Plesk. 63 dní bez pohybu. Presunuté z 'čaká na teba' do 'zamrznuté' - bez rozhodnutia už tretí mesiac. Repozitár je stále verejný.",
+  "stav": "Základ na Netlify z júna. Draft PR #1 (17. 8.): automatické bannery z feedu, produktové feedy, nahrávanie do reklamných platforiem, návod na presun na Plesk. 70 dní bez pohybu. Repozitár je stále verejný (tretí týždeň upozornenia).",
   "caka": "Na rozhodnutie o presune z Netlify na Plesk a zlúčenie PR. Pozor: repozitár je stále verejný.",
   "krok": "Prepnúť na private; rozhodnúť, či zlúčiť PR alebo archivovať."
  },
@@ -256,7 +256,7 @@
   "typ": "Jeden HTML súbor",
   "oblast": "CK DAKA",
   "kat": "NASADENE",
-  "stav": "Hotové, dáta za máj až júl 2026, 15. 8. záložka Prehľad firmy. Bez vetvy main. 65 dní bez zmeny.",
+  "stav": "Hotové, dáta za máj až júl 2026, 15. 8. záložka Prehľad firmy. Bez vetvy main. 72 dní bez zmeny.",
   "caka": "Na mesačnú aktualizáciu dát, ak ho používaš.",
   "krok": "Nič, pokiaľ sa používa."
  },
@@ -265,16 +265,16 @@
   "typ": "Android appka, Kotlin, release na Google Play",
   "oblast": "Osobné",
   "kat": "NASADENE",
-  "stav": "Hotové, PR #3 (API 36, priblíženie, zaostrenie) 15. 8. APK v releases, workflow Release pre Google Play. 65 dní bez zmeny.",
-  "caka": "Na stiahnutia v obchode - nie na kód.",
-  "krok": "Nič."
+  "stav": "Kód bez zmeny od 15. 8. (72 dní), ale 23. 10. si ručne spustil workflow 'Release pre Google Play' - zostavil podpísaný App Bundle, overil podpis aj podporu 16 kB stránok a nahral artefakt (beh úspešný). Či bol balík nahratý do Play Console a zverejnený, z repozitára nevidno. Jediná release na GitHube je stále 'debug-latest' zo 4. 8.",
+  "caka": "Na nahratie AAB z 23. 10. do Play Console, ak sa to ešte nestalo.",
+  "krok": "Dokončiť publikovanie v Play Console."
  },
  "EOS": {
   "nazov": "EOS systém CK DAKA",
   "typ": "Interná appka na porady, úlohy, Rocks; Microsoft prihlásenie; Vercel",
   "oblast": "CK DAKA",
   "kat": "NASADENE",
-  "stav": "PR #9 (automatický import dát) zlúčený 15. 8. 65 dní bez zmeny. Homepage repozitára: eos-eosin.vercel.app.",
+  "stav": "PR #9 (automatický import dát) zlúčený 15. 8. 72 dní bez zmeny. Homepage repozitára: eos-eosin.vercel.app.",
   "caka": "Na používanie pri kvartálnych EOS stretnutiach. Z repozitára nevidno, či ho tím používa.",
   "krok": "Overiť, či tím appku používa."
  },
@@ -283,7 +283,7 @@
   "typ": "Android appka, API 36",
   "oblast": "Osobné",
   "kat": "ZAMRZNUTE",
-  "stav": "Hotové v draft PR #1 (4 commity, 68 súborov), APK build zelený 15. 8. 65 dní bez pohybu, main prázdny. Presunuté z 'čaká na teba' do 'zamrznuté'.",
+  "stav": "Hotové v draft PR #1 (4 commity, 68 súborov), APK build zelený 15. 8. 72 dní bez pohybu, main prázdny.",
   "caka": "Na tvoje rozhodnutie, či ju používaš alebo vydať.",
   "krok": "Zlúčiť PR alebo archivovať."
  },
@@ -292,7 +292,7 @@
   "typ": "Web + Android APK, skóre na server",
   "oblast": "CK DAKA",
   "kat": "ZAMRZNUTE",
-  "stav": "Hotové v draft PR #1 (17. 7.), APK build zelený. 94 dní bez pohybu, main prázdny.",
+  "stav": "Hotové v draft PR #1 (17. 7.), APK build zelený. 101 dní bez pohybu, main prázdny.",
   "caka": "Na rozhodnutie, či ide do klientskej appky CK DAKA alebo sa archivuje.",
   "krok": "Rozhodnúť v rámci CK-DAKA-app."
  },
@@ -301,7 +301,7 @@
   "typ": "Web appka nad XML feedom, GitHub Pages náhľad, Lighthouse",
   "oblast": "CK DAKA",
   "kat": "AUTO",
-  "stav": "Kód od 16. 7. bez zmeny, ale náhľad sa automaticky nasadzuje 5x denne z aktuálneho feedu (posledný beh dnes 19. 10., úspešný, celý týždeň bez zlyhania).",
+  "stav": "Kód od 16. 7. bez zmeny (102 dní), ale náhľad sa automaticky nasadzuje 5x denne z aktuálneho feedu (36 behov od 19. 10., všetky úspešné, posledný dnes 26. 10.).",
   "caka": "Nič neblokuje. Rozhodnúť, či ho zapojiť do webu ckdaka.sk (ui42) alebo do klientskej appky.",
   "krok": "Zvážiť integráciu do nového webu."
  },
@@ -310,7 +310,7 @@
   "typ": "Python nástroj + naplánovaná úloha každý pondelok 6:51, HTML reporty v repozitári",
   "oblast": "Osobné",
   "kat": "AUTO",
-  "stav": "Domov tohto monitorovacieho nástroja. Dnes tretí beh; minulý beh 12. 10. commitol report a stav. Pozor: repozitár je stále verejný a obsahuje interný prehľad všetkých projektov. V tomto behu nebol dostupný nástroj list_repos, preto sa pracovalo so zoznamom 35 repozitárov z minulého behu - prípadný nový repozitár by tu chýbal.",
+  "stav": "Domov tohto monitorovacieho nástroja. Dnes štvrtý beh; minulý beh 19. 10. commitol report a stav. Pozor: repozitár je stále verejný a obsahuje interný prehľad všetkých projektov (tretí týždeň upozornenia). Ani v tomto behu nebol dostupný nástroj list_repos ani add_repo, preto sa pracovalo so zoznamom 35 repozitárov, ktoré sú pripojené k naplánovanej úlohe - prípadný nový repozitár by tu chýbal.",
   "caka": "Na prepnutie repozitára na private.",
   "krok": "Prepnúť na private (Settings > Danger zone > Change visibility)."
  }

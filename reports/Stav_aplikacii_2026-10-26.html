@@ -1,0 +1,421 @@
+<!doctype html><html lang="sk"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stav aplikácií - 26.10.2026</title>
+<style>
+:root{--navy:#1B3665;--green:#669B41;--bg:#f5f6f8;--ink:#1d2433;--muted:#5b6b8a}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,"Segoe UI",system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5}
+header.top{background:var(--navy);color:#fff;padding:28px 24px;border-bottom:5px solid var(--green)}
+header.top h1{margin:0;font-size:26px}header.top p{margin:6px 0 0;opacity:.85}
+main{max-width:1100px;margin:0 auto;padding:20px 16px 60px}
+.tiles{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:18px 0}
+.tile{background:#fff;border-radius:10px;padding:14px;box-shadow:0 1px 3px rgba(0,0,0,.08)}.tile .n{font-size:32px;font-weight:700}.tile .l{color:var(--muted);font-size:13px}
+.summary{background:#fff;border-radius:10px;padding:18px 22px;box-shadow:0 1px 3px rgba(0,0,0,.08);margin-bottom:16px}
+.summary ol li,.summary ul li{margin:8px 0}
+.summary.changes{border-left:6px solid var(--green)}.summary.decide{border-left:6px solid #E0A100}
+.note{color:var(--muted);font-size:13px;margin:0 0 8px}
+h2{margin:34px 0 12px;font-size:21px}h2 small{font-weight:400;color:var(--muted);font-size:14px;margin-left:8px}
+.card{background:#fff;border-radius:10px;border-left:6px solid;padding:16px 20px;margin:12px 0;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.card header{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.card h3{margin:0;font-size:18px}.card h3 a{color:var(--navy);text-decoration:none}.repo{font-weight:400;color:var(--muted);font-size:13px;margin-left:6px}
+.badge{color:#fff;font-size:12px;padding:3px 10px;border-radius:999px;white-space:nowrap}
+.typ{color:var(--muted);margin:4px 0 8px;font-size:14px}
+.kpi{display:flex;flex-wrap:wrap;gap:6px 18px;font-size:13px;color:var(--muted);margin-bottom:8px}.kpi b{color:var(--ink)}
+.card p{margin:6px 0}.krok{color:var(--green);font-weight:500}.krok b{color:var(--ink)}
+.prs{font-size:13px;margin:6px 0;padding-left:18px}details{font-size:13px;margin-top:6px}summary{cursor:pointer;color:var(--muted)}
+.commits{padding-left:18px}.commits .d{color:var(--muted);font-family:monospace;margin-right:6px}
+footer{text-align:center;color:var(--muted);font-size:12px;padding:20px}
+@media print{.card{break-inside:avoid}}
+</style></head><body>
+<header class="top"><h1>Stav aplikácií postavených cez Claude Code</h1><p>Týždenný prehľad k 26. 10. 2026 · 35 repozitárov pod kontom konatel-code · zdroj: GitHub API (commity, vetvy, PR, CI, README) a naplánované úlohy</p></header>
+<main>
+<div class="tiles"><div class="tile" style="border-top:4px solid #669B41"><div class="n">2</div><div class="l">Aktívny vývoj</div></div><div class="tile" style="border-top:4px solid #1B3665"><div class="n">4</div><div class="l">Beží automaticky</div></div><div class="tile" style="border-top:4px solid #E0A100"><div class="n">7</div><div class="l">Hotové, čaká na teba</div></div><div class="tile" style="border-top:4px solid #C0392B"><div class="n">10</div><div class="l">Zamrznuté</div></div><div class="tile" style="border-top:4px solid #5B6B8A"><div class="n">12</div><div class="l">Hotové / bez aktivity</div></div><div class="tile" style="border-top:4px solid var(--green)"><div class="n">9 / 112</div><div class="l">commitov za 7 / 30 dní</div></div><div class="tile" style="border-top:4px solid #E0A100"><div class="n">17</div><div class="l">otvorených PR (všetky draft)</div></div><div class="tile" style="border-top:4px solid #C0392B"><div class="n">1</div><div class="l">neúspešných CI behov za 7 dní</div></div></div>
+<div class="summary changes"><h2 style="margin-top:0">Čo sa zmenilo od minulého týždňa</h2><p class="note">Porovnanie je oproti snímku a reportu z 19. 10. 2026; za zmenu sa berie, čo sa v repozitároch stalo od 19. do 26. 10. Zoznam repozitárov je rovnaký ako minulý týždeň (35), nástroje list_repos a add_repo neboli v tomto behu dostupné, preto sa pracovalo s repozitármi pripojenými k naplánovanej úlohe - prípadný nový repozitár by tu chýbal.</p><ul><li><b>Po tichom týždni sa pohli dva projekty.</b> 24. 10. pribudol commit v Kolese šťastia (draft PR #1: oprava, ktorá obchádza ročnú cache prehliadača pre koleso-data.js - prehliadač z minulého týždňa ukazoval starú ponuku a hlášku „Koleso šťastia sa pripravuje“) a v DJ Imi (návod na nasadenie DJWish na Plesk: IPv6 záznam, kontrola certifikátu). Oba sú späť v kategórii „aktívny vývoj“. Ostatné repozitáre bez ručného commitu, pohyb v nich bol len automatický (Medveďomer, monitoring konkurencie).</li><li><b>QR Skener: 23. 10. si ručne spustil workflow „Release pre Google Play“</b> - zostavil podpísaný App Bundle, overil podpis a podporu 16 kB stránok, beh úspešný. Kód sa nezmenil; či bol balík nahratý do Play Console, z repozitára nevidno.</li><li><b>Koleso šťastia - overené v databáze CK DAKA:</b> sobota 24. 10. (prvá bez zľavy ZIMA) mala 448 točení z 425 adries. Trend: 3. 10. 684, 10. 10. 569, 17. 10. 477, 24. 10. 448 - štvrtý týždeň po sebe pokles, ale koniec zľavy ZIMA spôsobil len mierny prepad (o 6 %).</li><li><b>Monitoring konkurencie (Web-aplik-cia) zlyhal štvrtý pondelok po sebe</b> - beh 19. 10. skončil ako cancelled po 350 minútach: 42 plných analýz trvalo 3 h 05 min, potom sa stihlo 40 z 250 aktualizácií. Report 2026-10-19 sa commitol neúplný. Nové zistenie z logu: premenné SMTP_HOST, SMTP_USER, SMTP_PASSWORD a SMTP_FROM sú v workflow prázdne - e-mail by neodišiel ani pri úspešnom behu, secrets v repozitári chýbajú. Dnešný beh beží od 05:03 UTC znova ako jeden shard.</li><li><b>Medveďomer a Sprievodca výberom zájazdov bežia bez chyby</b> - Medveďomer 16 behov za týždeň (denná analýza médií 19. až 26. 10. s commitom každý deň), Sprievodca 36 nasadení náhľadu, všetko úspešné. Jediný neúspešný CI beh za týždeň je spomínaný monitoring konkurencie.</li><li><b>Naplánované úlohy:</b> „Týždenný report predajov“ dnes prebehol v poriadku za 15 minút, „Týždenný prehľad CK DAKA“ za 4,5 minúty. „Tipy - denný beh“ hlási úspech aj 25. 10., ale trvá 15 ms a repozitár Tipy je bez commitu od 5. 9. (51 dní) - úloha je mŕtva, druhý týždeň po sebe. „CK DAKA - týždenná kontrola po cron behu“ 19. 10. to isté (8 ms, nič neskontrolovala, hoci monitoring zlyhal).</li><li><b>Žiadne zlúčené ani nové PR.</b> Otvorených je stále 17 PR, všetky draft; zmenil sa len PR #1 v Kolese šťastia (10 commitov). GhostDash, CK DAKA App, MimicChain, Posledná stopa a Recommender stoja 19 dní, Kvíz 15 dní, Účtovník 24 dní - ten o týždeň spadne medzi zamrznuté.</li><li><b>Presuny medzi kategóriami:</b> Koleso šťastia z „hotové / bez aktivity“ a DJ Imi z „čaká na teba“ do „aktívny vývoj“. Inak bez zmeny: 7 čaká na teba, 10 zamrznutých, 12 hotových bez aktivity, 4 automatické.</li><li><b>Verejné repozitáre:</b> Bus-syst-m-test (tento prehľad) a banner-generator sú stále verejné - tretí týždeň bez zmeny.</li></ul></div>
+<div class="summary decide"><h2 style="margin-top:0">Čo potrebuje tvoje rozhodnutie tento týždeň</h2><ol><li><b>Monitoring konkurencie - prerobiť cron beh a doplniť SMTP secrets.</b> Štyri pondelky po sebe cancelled po 350 minútach, 210 z 250 aktualizácií sa nestihne. Aj keby beh dobehol, e-mail neodíde, lebo SMTP secrets v repozitári nie sú nastavené. Riešenie: otvoriť Claude Code nad repozitárom Web-aplik-cia, dať prerobiť pondelkový beh na 4-5 paralelných shardov (matrix) alebo rotáciu po cca 60 zájazdoch, a v Settings > Secrets doplniť SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASSWORD, SMTP_FROM. Kontrolnú úlohu „týždenná kontrola po cron behu“ vytvoriť nanovo.</li><li><b>Koleso šťastia - overiť, že oprava cache z 24. 10. je na webe.</b> Bez nej časť návštevníkov vidí v sobotu starú ponuku alebo hlášku „pripravuje sa“. Zároveň nastaviť cache pre /koleso/ na nginx podľa NASADENIE.md a zlúčiť PR #1. Točenia klesajú štvrtý týždeň (684 > 569 > 477 > 448) - zvážiť, či akciu oživiť novou ponukou.</li><li><b>Kvíz - dokončiť zabezpečenie na Plesku.</b> Podľa auditu z 11. 10. sa z kviz.daka.sk dajú stiahnuť obe banky otázok aj kód (BEZPECNOST.md v repozitári Kviz). Tretí týždeň bez viditeľnej zmeny.</li><li><b>Dve appky čakajú na Play Console:</b> AAB 1.5 klientskej appky CK DAKA (pripravený od 7. 10., 19 dní) a nový podpísaný balík QR Skenera z 23. 10. Z repozitárov nevidno, či sú nahraté.</li><li><b>Tipy - zrušiť alebo znovu vytvoriť naplánovanú úlohu.</b> Hlási úspech každý deň, od 5. 9. nevznikol žiadny tip ani commit. Buď ju vypnúť, alebo vytvoriť ako samostatnú úlohu, ktorá si repozitár naklonuje a pushne.</li><li><b>Prepnúť dva verejné repozitáre na private:</b> Bus-syst-m-test (obsahuje tento interný prehľad všetkých projektov) a banner-generator. Tretí týždeň bez zmeny.</li><li><b>Upratať zamrznuté projekty.</b> Účtovník (24 dní) o týždeň spadne medzi zamrznuté; InvoiceFlow a E-faktúra sa s ním prekrývajú (46 a 50 dní). KARAVIO, baDAKAteľ, Hry CK DAKA, CallGuard, Generátor bannerov a stará klientská PWA stoja 67 až 101 dní. Pri každom určiť: pokračovať, zlúčiť, alebo zavrieť PR a archivovať.</li></ol></div>
+<section><h2 style="color:#669B41">Aktívny vývoj <small>2 · commity za posledných 7 dní</small></h2>
+<article class="card" style="border-left-color:#669B41">
+  <header><h3><a href="https://github.com/konatel-code/Koleso-astia" target="_blank">Koleso šťastia CK DAKA</a> <span class="repo">Koleso-astia</span></h3>
+  <span class="badge" style="background:#669B41">Aktívny vývoj</span></header>
+  <p class="typ">Web akcia - automatický výber, kódy v DB, losovanie na serveri · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-10-24</b> (1 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>1</b></span><span>vetvy <b>2</b></span><span>CI: bez CI</span></div>
+  <p><b>Stav:</b> Akcia beží naživo a tento týždeň sa na nej pracovalo: 24. 10. pribudol do draft PR #1 commit, ktorý obchádza ročnú cache prehliadača pre koleso-data.js (server posiela max-age 1 rok, takže prehliadač z minulého týždňa ukazoval starú ponuku a hlášku &#x27;Koleso šťastia sa pripravuje&#x27;; index.html teraz načítava dáta s verziou v adrese, NASADENIE.md má odporúčané nastavenie cache pre nginx). V databáze CK DAKA je 448 točení v sobotu 24. 10. (prvá sobota bez zľavy ZIMA), 17. 10. ich bolo 477, 10. 10. 569 a 3. 10. 684 - štvrtý týždeň pokles. Kód je stále len v draft PR #1 (10 commitov), main obsahuje len README.</p>
+  <p><b>Na čo sa čaká:</b> Z repozitára nevidno, či je oprava cache už nahratá na web a či je nastavený nginx podľa NASADENIE.md. Pre poriadok zlúčiť PR do main.</p>
+  <p class="krok"><b>Ďalší krok:</b> Overiť na webe, že koleso načítava aktuálne dáta (oprava z 24. 10.); nastaviť cache pre /koleso/ podľa NASADENIE.md; zlúčiť PR #1.</p>
+  <ul class='prs'><li>PR #1 <em>Koleso šťastia CK DAKA - automatický výber, kódy v DB, losovanie na serveri</em> - 10 commitov, 16 súborov, posledná zmena 2026-10-24 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-09-22</span> Initial commit</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#669B41">
+  <header><h3><a href="https://github.com/konatel-code/DJ-IMI" target="_blank">DJ Imi - wish list pesničiek</a> <span class="repo">DJ-IMI</span></h3>
+  <span class="badge" style="background:#669B41">Aktívny vývoj</span></header>
+  <p class="typ">Malá Node.js webová appka s QR kódom a adminom · oblasť: Osobné</p>
+  <div class="kpi"><span>posledný push <b>2026-10-24</b> (1 d)</span><span>commity 7 / 30 dní <b>1 / 13</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>1</b></span><span>CI: bez CI</span></div>
+  <p><b>Stav:</b> 24. 10. pribudol commit do návodu djwish/NASADENIE-PLESK.md (IPv6 AAAA záznam len s priradenou IPv6 v Plesku, kontrola certifikátu na všetkých IP) - vyzerá to, že nasadenie DJWish na Plesk sa reálne rieši. Predtým 11. 10. DJWish (služba pre viacerých DJ-ov s predplatným, bezpečnostný audit, VOP a GDPR). Presunuté z &#x27;čaká na teba&#x27; späť do &#x27;aktívny&#x27;.</p>
+  <p><b>Na čo sa čaká:</b> Z repozitára nevidno, či djwish.app už beží. Repo má len jednu vetvu ccr-..., bez main. Rozhodnutie, či službu ponúkať komerčne, stále nie je v repozitári zachytené.</p>
+  <p class="krok"><b>Ďalší krok:</b> Dokončiť nasadenie na Plesk; rozhodnúť o komerčnom spustení djwish.app; premenovať vetvu na main.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-10-24</span> Návod djwish: IPv6 (AAAA) len s priradenou IPv6 v Plesku, kontrola certifikátu na všetkých IP</li><li><span class="d">2026-10-11</span> Bezpečnostný audit a opravy, obchodné podmienky a ochrana osobných údajov</li><li><span class="d">2026-10-11</span> DJWish: služba pre viacerých DJ-ov (djwish.app)</li></ul></details>
+</article></section><section><h2 style="color:#1B3665">Beží automaticky <small>4 · naplánované behy, bez ručnej práce</small></h2>
+<article class="card" style="border-left-color:#1B3665">
+  <header><h3><a href="https://github.com/konatel-code/Medved" target="_blank">Medveďomer</a> <span class="repo">Medved</span></h3>
+  <span class="badge" style="background:#1B3665">Beží automaticky</span></header>
+  <p class="typ">Verejná komunitná web + Android appka · oblasť: Osobné</p>
+  <div class="kpi"><span>posledný push <b>2026-10-26</b> (0 d)</span><span>commity 7 / 30 dní <b>7 / 30</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>2</b></span><span>CI: Nasadenie na GitHub Pages: success (2026-10-26), Denná analýza médií: success (2026-10-26)</span></div>
+  <p><b>Stav:</b> Beží naplno. Denná analýza médií prebehla 19. až 26. 10. každý deň úspešne (vrátane dnešného behu) a každý deň vznikol commit &#x27;Denná aktualizácia dát&#x27; (7 commitov za 7 dní, 16 behov za týždeň bez jedinej chyby).</p>
+  <p><b>Na čo sa čaká:</b> Nič neblokuje. Vývojová vetva z 20. 8. (ikona labky) stále visí, zrejme už zapracovaná.</p>
+  <p class="krok"><b>Ďalší krok:</b> Len sledovať denné behy; vymazať starú vetvu.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-10-26</span> Denná aktualizácia dát (médiá + pozormedved.sk)</li><li><span class="d">2026-10-25</span> Denná aktualizácia dát (médiá + pozormedved.sk)</li><li><span class="d">2026-10-24</span> Denná aktualizácia dát (médiá + pozormedved.sk)</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#1B3665">
+  <header><h3><a href="https://github.com/konatel-code/Web-aplik-cia" target="_blank">Týždenný monitoring konkurencie</a> <span class="repo">Web-aplik-cia</span></h3>
+  <span class="badge" style="background:#1B3665">Beží automaticky</span></header>
+  <p class="typ">Python + GitHub Actions, report na GitHub Pages · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-10-19</b> (6 d)</span><span>commity 7 / 30 dní <b>1 / 7</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>2</b></span><span>CI: Týždenný monitoring konkurencie: in_progress (2026-10-26), pages build and deployment: success (2026-10-19)</span></div>
+  <p><b>Stav:</b> Problém sa opakuje štvrtý pondelok po sebe: beh 19. 10. skončil ako cancelled po 350 minútach (timeout-minutes 350). Z logu: 42 plných analýz trvalo 3 h 05 min (05:02-08:07), potom aktualizácie známych ponúk po cca 4 minúty - stihlo sa 40 z 250, zvyšných 210 nie. Report 2026-10-19 sa commitol neúplný. Navyše z logu vidno, že premenné SMTP_HOST, SMTP_PORT, SMTP_USER, SMTP_PASSWORD a SMTP_FROM sú v workflow prázdne - e-mail by sa neodoslal ani pri úspešnom behu, lebo secrets v repozitári nie sú nastavené. Dnešný beh beží od 05:03 UTC ako jeden shard a dopadne rovnako. Kontrolná naplánovaná úloha &#x27;týždenná kontrola po cron behu&#x27; 19. 10. opäť hlásila úspech po 8 ms - nič nekontroluje.</p>
+  <p><b>Na čo sa čaká:</b> Na opravu workflow: cron beh ide ako jeden shard (shard_count 1). Workflow podporuje shard_index/shard_count a --limit, ale len pri ručnom spustení. Treba rozdeliť cron na 4-5 paralelných shardov (matrix) alebo obmedziť aktualizácie na cca 60 zájazdov za beh (rotácia). A doplniť SMTP secrets do repozitára, inak e-mail neodíde nikdy.</p>
+  <p class="krok"><b>Ďalší krok:</b> Otvoriť Claude Code nad repozitárom a dať prerobiť cron beh na paralelné shardy alebo rotáciu; nastaviť SMTP secrets; kontrolnú úlohu vytvoriť nanovo ako samostatnú.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-10-19</span> Týždenný report 2026-10-19</li><li><span class="d">2026-10-12</span> Týždenný report 2026-10-12</li><li><span class="d">2026-10-05</span> Týždenný report 2026-10-05</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#1B3665">
+  <header><h3><a href="https://github.com/konatel-code/Bus-syst-m-test" target="_blank">Stav aplikácií (týždenný monitoring)</a> <span class="repo">Bus-syst-m-test</span></h3>
+  <span class="badge" style="background:#1B3665">Beží automaticky</span></header>
+  <p class="typ">Python nástroj + naplánovaná úloha každý pondelok 6:51, HTML reporty v repozitári · oblasť: Osobné</p>
+  <div class="kpi"><span>posledný push <b>2026-10-19</b> (7 d)</span><span>commity 7 / 30 dní <b>0 / 4</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>1</b></span><span>CI: bez CI</span></div>
+  <p><b>Stav:</b> Domov tohto monitorovacieho nástroja. Dnes štvrtý beh; minulý beh 19. 10. commitol report a stav. Pozor: repozitár je stále verejný a obsahuje interný prehľad všetkých projektov (tretí týždeň upozornenia). Ani v tomto behu nebol dostupný nástroj list_repos ani add_repo, preto sa pracovalo so zoznamom 35 repozitárov, ktoré sú pripojené k naplánovanej úlohe - prípadný nový repozitár by tu chýbal.</p>
+  <p><b>Na čo sa čaká:</b> Na prepnutie repozitára na private.</p>
+  <p class="krok"><b>Ďalší krok:</b> Prepnúť na private (Settings &gt; Danger zone &gt; Change visibility).</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-10-19</span> Týždenný report 19. 10. 2026: snímok, hodnotenie, poznámky, report</li><li><span class="d">2026-10-12</span> Týždenný report 12. 10. 2026 (2/3): hodnotenie, týždenné poznámky, report.py</li><li><span class="d">2026-10-12</span> Týždenný report 12. 10. 2026 (1/3): README, .gitignore, enrich_prs.py</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#1B3665">
+  <header><h3><a href="https://github.com/konatel-code/Ck-daka" target="_blank">Sprievodca výberom zájazdov</a> <span class="repo">Ck-daka</span></h3>
+  <span class="badge" style="background:#1B3665">Beží automaticky</span></header>
+  <p class="typ">Web appka nad XML feedom, GitHub Pages náhľad, Lighthouse · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-07-16</b> (101 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>2</b></span><span>CI: Deploy náhľad (GitHub Pages): success (2026-10-26), Deploy náhľad (GitHub Pages): success (2026-10-25)</span></div>
+  <p><b>Stav:</b> Kód od 16. 7. bez zmeny (102 dní), ale náhľad sa automaticky nasadzuje 5x denne z aktuálneho feedu (36 behov od 19. 10., všetky úspešné, posledný dnes 26. 10.).</p>
+  <p><b>Na čo sa čaká:</b> Nič neblokuje. Rozhodnúť, či ho zapojiť do webu ckdaka.sk (ui42) alebo do klientskej appky.</p>
+  <p class="krok"><b>Ďalší krok:</b> Zvážiť integráciu do nového webu.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-07-16</span> Odznak „Novinka&quot; do pravého dolného rohu obrázka</li><li><span class="d">2026-07-16</span> Novinky: naplniť sekciu hneď (seed podľa katalógu) + oprava 404</li><li><span class="d">2026-07-05</span> Novinky - kategória zájazdov, ktoré nedávno pribudli do ponuky</li></ul></details>
+</article></section><section><h2 style="color:#E0A100">Hotové, čaká na teba <small>7 · práca je v otvorenom PR, chýba rozhodnutie alebo nasadenie</small></h2>
+<article class="card" style="border-left-color:#E0A100">
+  <header><h3><a href="https://github.com/konatel-code/Kviz" target="_blank">Kvíz (tímový kvíz + kvízy pre zájazdy)</a> <span class="repo">Kviz</span></h3>
+  <span class="badge" style="background:#E0A100">Hotové, čaká na teba</span></header>
+  <p class="typ">Node.js web, nasadené na kviz.daka.sk (Plesk) · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-10-11</b> (14 d)</span><span>commity 7 / 30 dní <b>0 / 28</b></span><span>otvorené PR <b>1</b></span><span>vetvy <b>2</b></span><span>CI: bez CI</span></div>
+  <p><b>Stav:</b> Posledné commity 11. 10. (opravy z prvého kvízu na zájazde + bezpečnostný audit: XSS, brzda na hádanie hesla, CSP, 22 útočných testov). Odvtedy 15 dní bez zmeny. Nasadzuje sa priamo z vetvy claude/quiz-app-teams-iiddm9 na kviz.daka.sk.</p>
+  <p><b>Na čo sa čaká:</b> Na teba v Plesku: podľa BEZPECNOST.md sa z kviz.daka.sk stále dajú stiahnuť obe banky otázok aj kód - z repozitára nevidno, či sa to už opravilo. PR #17 (161 commitov) nie je zlúčený do main.</p>
+  <p class="krok"><b>Ďalší krok:</b> Opraviť nastavenie Plesku podľa BEZPECNOST.md; zlúčiť PR #17.</p>
+  <ul class='prs'><li>PR #17 <em>Zmeny po hre, banka na 300 tém, univerzálna verzia /kviz, heslo pre moderátora a kvízy pre zájazdy CK DAKA</em> - 161 commitov, 100 súborov, posledná zmena 2026-10-11 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-10-11</span> Bezpečnosť: XSS cez názov tímu, brzda na heslo, hlavičky a útočný test</li><li><span class="d">2026-10-11</span> Kvíz na zájazde: rozpísané pole nezmizne, verejne je len trojica, tlačidlo Ďalej</li><li><span class="d">2026-10-04</span> Plesk: na kviz.daka.sk boli súbory aplikácie stiahnuteľné z webu</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#E0A100">
+  <header><h3><a href="https://github.com/konatel-code/GhostDash" target="_blank">GhostDash</a> <span class="repo">GhostDash</span></h3>
+  <span class="badge" style="background:#E0A100">Hotové, čaká na teba</span></header>
+  <p class="typ">Mobilná hra (Android + iOS, KMP, Firebase) · oblasť: Hry</p>
+  <div class="kpi"><span>posledný push <b>2026-10-07</b> (18 d)</span><span>commity 7 / 30 dní <b>0 / 18</b></span><span>otvorené PR <b>1</b></span><span>vetvy <b>2</b></span><span>CI: Android CI: success (2026-10-07), Android CI: success (2026-10-07)</span></div>
+  <p><b>Stav:</b> M1 hrateľné jadro + Compose appka v draft PR #1 (69 commitov, 164 súborov). Od 7. 10. bez zmeny (19 dní), Android CI zelené. Druhý týždeň bez pohybu.</p>
+  <p><b>Na čo sa čaká:</b> PR #1 je draft, main je prázdny. iOS build závisí od verzie Kotlinu (GitLive 2.7 potrebuje novší Kotlin než 2.0.21).</p>
+  <p class="krok"><b>Ďalší krok:</b> Dotiahnuť iOS build alebo ho dočasne vypnúť a zlúčiť M1 do main.</p>
+  <ul class='prs'><li>PR #1 <em>GhostDash M1: game-engine (fixed-timestep, deterministic tracks) + Compose gameplay app</em> - 69 commitov, 164 súborov, posledná zmena 2026-10-07 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-10-07</span> Fix iOS Firestore build: use GitLive 2.0.0 - 2.7.0&#x27;s klibs need a newer Kotlin than 2.0.21</li><li><span class="d">2026-10-07</span> Fix iOS Firestore build: bump GitLive to 2.7.0, set() needs @Serializable data, not a Map</li><li><span class="d">2026-10-07</span> iOS: Firestore leaderboard (today&#x27;s top runs + all-time) and run submission</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#E0A100">
+  <header><h3><a href="https://github.com/konatel-code/CK-DAKA-app" target="_blank">CK DAKA App (klientská appka)</a> <span class="repo">CK-DAKA-app</span></h3>
+  <span class="badge" style="background:#E0A100">Hotové, čaká na teba</span></header>
+  <p class="typ">Android + web (Capacitor, React), vlastný backend, MCP · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-10-07</b> (18 d)</span><span>commity 7 / 30 dní <b>0 / 4</b></span><span>otvorené PR <b>1</b></span><span>vetvy <b>12</b></span><span>CI: CI: success (2026-10-07), Deploy web build: success (2026-10-07)</span></div>
+  <p><b>Stav:</b> Fázy 0-13 hotové v draft PR #1 (184 commitov, 349 súborov). 7. 10. podpísaný AAB verzia 1.5 pripravený na prvé nahratie do Play Console. Od 7. 10. bez zmeny (19 dní), CI aj web deploy zelené. Druhý týždeň bez pohybu.</p>
+  <p><b>Na čo sa čaká:</b> Na teba: nahrať AAB 1.5 do Google Play Console - z repozitára nevidno, či sa to už stalo. 10 vedľajších vetiev (admin chat, OAuth, interný MCP endpoint) z augusta a septembra bez jasného stavu.</p>
+  <p class="krok"><b>Ďalší krok:</b> Nahrať AAB do Play Console; upratať staré vetvy.</p>
+  <ul class='prs'><li>PR #1 <em>Fáza 0-13: appka CK DAKA - napojená na reálne dáta</em> - 184 commitov, 349 súborov, posledná zmena 2026-10-07 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-10-07</span> Docs: aktuálny odkaz na podpísaný AAB (verzia 1.5) pre prvé nahratie do Play Console</li><li><span class="d">2026-10-07</span> Bump versionCode 5→6 (1.4→1.5) pre nové nahratie do Play Console</li><li><span class="d">2026-10-06</span> Merge pull request #10 from konatel-code/claude/mcp-isdaka</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#E0A100">
+  <header><h3><a href="https://github.com/konatel-code/Mimicchain" target="_blank">MimicChain</a> <span class="repo">Mimicchain</span></h3>
+  <span class="badge" style="background:#E0A100">Hotové, čaká na teba</span></header>
+  <p class="typ">Android appka + backend API + admin panel · oblasť: Osobné</p>
+  <div class="kpi"><span>posledný push <b>2026-10-07</b> (18 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>1</b></span><span>vetvy <b>2</b></span><span>CI: CI: success (2026-10-07), CI: success (2026-09-18)</span></div>
+  <p><b>Stav:</b> MVP hotové v draft PR #1 (20 commitov, 439 súborov). Posledný commit 7. 10.: Plesk single-server deployment (compose, nginx, runbook). 19 dní bez zmeny.</p>
+  <p><b>Na čo sa čaká:</b> Na nasadenie na Plesk podľa runbooku a rozhodnutie zlúčiť PR do main (main obsahuje len README).</p>
+  <p class="krok"><b>Ďalší krok:</b> Nasadiť na Plesk podľa runbooku; zlúčiť PR.</p>
+  <ul class='prs'><li>PR #1 <em>MimicChain MVP: Android app, backend API + workers, admin panel, infra</em> - 20 commitov, 439 súborov, posledná zmena 2026-10-07 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-09-17</span> Initial commit</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#E0A100">
+  <header><h3><a href="https://github.com/konatel-code/Textovka" target="_blank">Posledná stopa (textovka)</a> <span class="repo">Textovka</span></h3>
+  <span class="badge" style="background:#E0A100">Hotové, čaká na teba</span></header>
+  <p class="typ">Mobilná gamebook hra (Android + iOS + web) · oblasť: Hry</p>
+  <div class="kpi"><span>posledný push <b>2026-10-07</b> (18 d)</span><span>commity 7 / 30 dní <b>0 / 3</b></span><span>otvorené PR <b>1</b></span><span>vetvy <b>2</b></span><span>CI: Build Android APK: success (2026-10-07), Deploy web version to GitHub Pages: success (2026-10-07)</span></div>
+  <p><b>Stav:</b> Hra hotová (11 koncov), iOS platforma a TestFlight workflow pridané 3. a 7. 10. Android APK aj web deploy zelené. Od 7. 10. bez zmeny (19 dní).</p>
+  <p><b>Na čo sa čaká:</b> Na publikovanie: Play Store (PLAY_STORE_CHECKLIST.md) a TestFlight. PR #1 stále draft, main prázdny.</p>
+  <p class="krok"><b>Ďalší krok:</b> Spustiť TestFlight workflow a prejsť Play Store checklist.</p>
+  <ul class='prs'><li>PR #1 <em>Posledná stopa - detektívna textovka pre Android</em> - 34 commitov, 152 súborov, posledná zmena 2026-10-07 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-10-07</span> Add TestFlight release workflow using cloud signing</li><li><span class="d">2026-10-03</span> Pin GoogleUserMessagingPlatform to 2.x to fix iOS build</li><li><span class="d">2026-10-03</span> Add iOS platform: Xcode project, per-platform ads config, CI build</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#E0A100">
+  <header><h3><a href="https://github.com/konatel-code/ckdaka-recommender" target="_blank">CK DAKA Recommender</a> <span class="repo">ckdaka-recommender</span></h3>
+  <span class="badge" style="background:#E0A100">Hotové, čaká na teba</span></header>
+  <p class="typ">Odporúčací systém na web + personalizované e-maily (Python, PHP) · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-10-07</b> (18 d)</span><span>commity 7 / 30 dní <b>0 / 1</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>2</b></span><span>CI: Graph Update: pip in /recommender #1457021450: success (2026-07-12)</span></div>
+  <p><b>Stav:</b> PR zlúčený 7. 10. (odporúčania na webe, unikátne e-maily podľa správania). Vo vetve je návod na nasadenie pre programátora a automatizácia importu odberateľov. 19 dní bez zmeny.</p>
+  <p><b>Na čo sa čaká:</b> Na nasadenie na web ckdaka.sk - integrácia integration.php + tracker.js patrí programátorovi/ui42. Z repozitára nevidno, či už beží.</p>
+  <p class="krok"><b>Ďalší krok:</b> Odovzdať návod na nasadenie programátorovi a dohodnúť termín.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-10-07</span> Personalizované odporúčania na webe a unikátne emaily podľa správania zákazníka (#1)</li><li><span class="d">2026-07-12</span> Initial recommender system for CK Daka</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#E0A100">
+  <header><h3><a href="https://github.com/konatel-code/Uctovnik" target="_blank">CK DAKA Accounting (Účtovník)</a> <span class="repo">Uctovnik</span></h3>
+  <span class="badge" style="background:#E0A100">Hotové, čaká na teba</span></header>
+  <p class="typ">Účtovný systém podľa master špecifikácie · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-10-02</b> (23 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>1</b></span><span>vetvy <b>2</b></span><span>CI: CI: success (2026-10-02), CI: success (2026-10-02)</span></div>
+  <p><b>Stav:</b> Kompletný základ v draft PR #1 (51 commitov, 1 205 súborov). Posledná oprava 2. 10., odvtedy 24 dní bez pohybu, main prázdny. CI zelené. Ak sa do budúceho pondelka nič nestane, prejde medzi zamrznuté (30 dní).</p>
+  <p><b>Na čo sa čaká:</b> Na tvoju kontrolu a rozhodnutie, čo s ním ďalej. Prekrýva sa s Kontrola-fakt-r a Efaktura.</p>
+  <p class="krok"><b>Ďalší krok:</b> Prejsť si stav oproti špecifikácii a určiť ďalšiu fázu.</p>
+  <ul class='prs'><li>PR #1 <em>CK DAKA Accounting: kompletný základ účtovného systému podľa master špecifikácie</em> - 51 commitov, 1205 súborov, posledná zmena 2026-10-02 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-09-21</span> Initial commit</li></ul></details>
+</article></section><section><h2 style="color:#C0392B">Zamrznuté <small>10 · dlhšie bez pohybu a nejasné pokračovanie</small></h2>
+<article class="card" style="border-left-color:#C0392B">
+  <header><h3><a href="https://github.com/konatel-code/Kontrola-fakt-r" target="_blank">InvoiceFlow (kontrola faktúr)</a> <span class="repo">Kontrola-fakt-r</span></h3>
+  <span class="badge" style="background:#C0392B">Zamrznuté</span></header>
+  <p class="typ">Discovery + doménové jadro, Plesk, čítanie DB CK DAKA, pokladničné doklady · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-09-10</b> (45 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>1</b></span><span>vetvy <b>2</b></span><span>CI: CI: success (2026-09-10), CI: success (2026-09-10)</span></div>
+  <p><b>Stav:</b> Fáza 0 v draft PR #1 (3 commity, 50 súborov) z 10. 9. Od vtedy 46 dní bez pohybu.</p>
+  <p><b>Na čo sa čaká:</b> Na tvoje rozhodnutie, či pokračovať fázou 1, alebo tému zlúčiť s Účtovníkom (prekrývajú sa).</p>
+  <p class="krok"><b>Ďalší krok:</b> Rozhodnúť: pokračovať, zlúčiť s Účtovníkom, alebo zavrieť.</p>
+  <ul class='prs'><li>PR #1 <em>InvoiceFlow: discovery, dokumentácia a doménové jadro (Phase 0)</em> - 3 commitov, 50 súborov, posledná zmena 2026-09-10 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-09-10</span> Initial commit</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#C0392B">
+  <header><h3><a href="https://github.com/konatel-code/Bus-syst-m" target="_blank">Bus systém (objednávkový IS linkovej dopravy)</a> <span class="repo">Bus-syst-m</span></h3>
+  <span class="badge" style="background:#C0392B">Zamrznuté</span></header>
+  <p class="typ">Laravel/Vue - is.daka.sk; plus hra DAKA Cesta (Flutter) · oblasť: DAKA Transport</p>
+  <div class="kpi"><span>posledný push <b>2026-09-07</b> (48 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>2</b></span><span>vetvy <b>4</b></span><span>CI: Build DAKA Cesta (APK + web): success (2026-08-15), Build DAKA Cesta (APK + web): success (2026-06-13)</span></div>
+  <p><b>Stav:</b> Dva draft PR: #1 Objednávkový IS - zadanie, gap-analýza a referenčný build (585 súborov, 7. 9.) a #2 DAKA Cesta vernostná hra (15. 8.). 49 dní bez pohybu. Posledné commity sú incident report pre Wame (FlixBus kolízie sedadiel).</p>
+  <p><b>Na čo sa čaká:</b> Na rozhodnutie o ďalšom postupe s dodávateľom Wame podľa incident reportu a gap-analýzy. DAKA Cesta čaká na rozhodnutie, či ju vôbec vydať.</p>
+  <p class="krok"><b>Ďalší krok:</b> Uzavrieť incident s Wame; rozhodnúť o DAKA Cesta.</p>
+  <ul class='prs'><li>PR #2 <em>DAKA Cesta - vernostná hra pre zákazníkov (Flutter + Flame)</em> - 46 commitov, 116 súborov, posledná zmena 2026-08-15 (draft)</li><li>PR #1 <em>Objednávkový IS DAKA - zadanie, gap-analýza a referenčný build</em> - 26 commitov, 585 súborov, posledná zmena 2026-09-07 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-09-07</span> docs: Incident report - finálna bilancia (45/45) a dohra so stornami u Flixu</li><li><span class="d">2026-09-07</span> docs: Incident report - doplnený spúšťač (release 4.9. 08:14) a denné štatistiky</li><li><span class="d">2026-09-07</span> EDIT(flixbus): Overovací skript - sken rozsahu dní (--from-date/--to-date)</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#C0392B">
+  <header><h3><a href="https://github.com/konatel-code/Efaktura" target="_blank">E-faktúra (EN 16931, UBL, Peppol)</a> <span class="repo">Efaktura</span></h3>
+  <span class="badge" style="background:#C0392B">Zamrznuté</span></header>
+  <p class="typ">Základ systému e-faktúr s mapperom CK DAKA · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-09-06</b> (49 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>1</b></span><span>vetvy <b>2</b></span><span>CI: CI: success (2026-09-06), CI: success (2026-09-06)</span></div>
+  <p><b>Stav:</b> Jeden commit v draft PR #1 (6. 9., 33 súborov). 50 dní bez pohybu. CI zelené.</p>
+  <p><b>Na čo sa čaká:</b> Na tvoje rozhodnutie, či pokračovať - súvisí s povinnou e-fakturáciou a s Účtovníkom.</p>
+  <p class="krok"><b>Ďalší krok:</b> Rozhodnúť, či ide do Účtovníka ako modul.</p>
+  <ul class='prs'><li>PR #1 <em>Základ systému e-faktúr: EN 16931 model, UBL generátor, mapper CK DAKA, Peppol validátor</em> - 1 commitov, 33 súborov, posledná zmena 2026-09-06 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-09-06</span> Initial commit</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#C0392B">
+  <header><h3><a href="https://github.com/konatel-code/Tipy" target="_blank">Tipy (denné športové tipy)</a> <span class="repo">Tipy</span></h3>
+  <span class="badge" style="background:#C0392B">Zamrznuté</span></header>
+  <p class="typ">Python, denný beh cez naplánovanú úlohu, dashboard na GitHub Pages · oblasť: Osobné</p>
+  <div class="kpi"><span>posledný push <b>2026-09-05</b> (50 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>1</b></span><span>CI: bez CI</span></div>
+  <p><b>Stav:</b> Denná naplánovaná úloha (06:12 a 07:12 UTC) hlási každý deň úspech, naposledy 25. 10., ale beh trvá 15 ms - len sa doručí do starej relácie, ktorá už nič nerobí. Posledný commit v repozitári je 5. 9., teda 51 dní bez výsledku. Repo nemá vetvu main. Druhý týždeň po sebe hlásené ako mŕtva úloha.</p>
+  <p><b>Na čo sa čaká:</b> Na tvoje rozhodnutie: buď úlohu zrušiť, alebo ju vytvoriť nanovo ako samostatnú úlohu (nie do zaniknutej relácie), ktorá si repozitár naklonuje a pushne.</p>
+  <p class="krok"><b>Ďalší krok:</b> Zrušiť alebo znovu vytvoriť naplánovanú úlohu Tipy.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-09-05</span> Tipy 5. 9. 2026: vyhodnotenie 4. 9. (hlavny 3/4, mega 6/7), novy hlavny ~2,28 a mega ~12,81</li><li><span class="d">2026-09-04</span> Tipy 4. 9. 2026: vyhodnotenie 3. 9. (hlavny 2/3), novy hlavny ~1,89 a mega ~12,29</li><li><span class="d">2026-09-03</span> Tipy 3. 9. 2026: vyhodnotenie 2. 9. (hlavny tiket 3/3), novy hlavny ~2,65; mega vynechane</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#C0392B">
+  <header><h3><a href="https://github.com/konatel-code/Bazar" target="_blank">KARAVIO (bazár karavanov)</a> <span class="repo">Bazar</span></h3>
+  <span class="badge" style="background:#C0392B">Zamrznuté</span></header>
+  <p class="typ">Monorepo - API, web, worker, Android · oblasť: Osobné / podnikanie</p>
+  <div class="kpi"><span>posledný push <b>2026-08-20</b> (66 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>1</b></span><span>vetvy <b>4</b></span><span>CI: CI: success (2026-08-20), Android APK: success (2026-08-20)</span></div>
+  <p><b>Stav:</b> Bootstrap platformy v draft PR #1 (35 commitov, 252 súborov), mobil v0.2.2. Od 20. 8. bez pohybu (67 dní), main prázdny.</p>
+  <p><b>Na čo sa čaká:</b> Na tvoje rozhodnutie, či projekt pokračuje (súvisí s prenájmom karavanov).</p>
+  <p class="krok"><b>Ďalší krok:</b> Rozhodnúť: pokračovať alebo archivovať.</p>
+  <ul class='prs'><li>PR #1 <em>KARAVIO: bootstrap platformy - monorepo, dokumentácia, API, web, worker, Inspect</em> - 35 commitov, 252 súborov, posledná zmena 2026-08-20 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-08-18</span> Initial commit</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#C0392B">
+  <header><h3><a href="https://github.com/konatel-code/baDAKAtel" target="_blank">baDAKAteľ (herná appka)</a> <span class="repo">baDAKAtel</span></h3>
+  <span class="badge" style="background:#C0392B">Zamrznuté</span></header>
+  <p class="typ">Herný backend, mapa sveta, denná hra, passport · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-08-20</b> (66 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>1</b></span><span>vetvy <b>4</b></span><span>CI: CI: success (2026-08-20), CI: success (2026-08-20)</span></div>
+  <p><b>Stav:</b> MVP v draft PR #1 (21 commitov, 225 súborov), deploy vetvy pre API aj web, návod pre Plesk. 67 dní bez pohybu.</p>
+  <p><b>Na čo sa čaká:</b> Na nasadenie na Plesk a rozhodnutie, či patrí do stratégie omladenia klientely (DAKA Go).</p>
+  <p class="krok"><b>Ďalší krok:</b> Rozhodnúť v rámci DAKA Go 2027.</p>
+  <ul class='prs'><li>PR #1 <em>baDAKAteľ MVP - herný backend, mapa sveta, denná hra a passport</em> - 21 commitov, 225 súborov, posledná zmena 2026-08-20 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-08-15</span> Initial commit</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#C0392B">
+  <header><h3><a href="https://github.com/konatel-code/ckdaka-app" target="_blank">CK DAKA klientská PWA (staršia verzia)</a> <span class="repo">ckdaka-app</span></h3>
+  <span class="badge" style="background:#C0392B">Zamrznuté</span></header>
+  <p class="typ">Next.js 15 PWA, 100+ DB modelov, Vercel · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-08-17</b> (69 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>1</b></span><span>CI: bez CI</span></div>
+  <p><b>Stav:</b> 3 commity, posledný 17. 8. Bez CI, bez vetiev. Prekrýva sa s CK-DAKA-app. 70 dní bez zmeny.</p>
+  <p><b>Na čo sa čaká:</b> Na rozhodnutie, či archivovať v prospech CK-DAKA-app.</p>
+  <p class="krok"><b>Ďalší krok:</b> Archivovať alebo zlúčiť nápady do CK-DAKA-app.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-08-17</span> Switch Prisma provider to PostgreSQL for production deploy</li><li><span class="d">2026-07-12</span> Add Vercel config (fra1 region, prisma generate in build)</li><li><span class="d">2026-07-12</span> Initial commit: CK DAKA client PWA (~100 DB models, 400+ components)</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#C0392B">
+  <header><h3><a href="https://github.com/konatel-code/banner-generator" target="_blank">Generátor bannerov</a> <span class="repo">banner-generator</span></h3>
+  <span class="badge" style="background:#C0392B">Zamrznuté</span></header>
+  <p class="typ">HTML/JS + PHP proxy, Netlify; verejný repozitár · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-08-17</b> (69 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>1</b></span><span>vetvy <b>2</b></span><span>CI: pages build and deployment: success (2026-06-09), pages build and deployment: success (2026-06-09)</span></div>
+  <p><b>Stav:</b> Základ na Netlify z júna. Draft PR #1 (17. 8.): automatické bannery z feedu, produktové feedy, nahrávanie do reklamných platforiem, návod na presun na Plesk. 70 dní bez pohybu. Repozitár je stále verejný (tretí týždeň upozornenia).</p>
+  <p><b>Na čo sa čaká:</b> Na rozhodnutie o presune z Netlify na Plesk a zlúčenie PR. Pozor: repozitár je stále verejný.</p>
+  <p class="krok"><b>Ďalší krok:</b> Prepnúť na private; rozhodnúť, či zlúčiť PR alebo archivovať.</p>
+  <ul class='prs'><li>PR #1 <em>Automatické generovanie bannerov z feedu, produktové feedy a nahrávanie do reklamných platforiem</em> - 9 commitov, 50 súborov, posledná zmena 2026-08-17 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-06-09</span> Add Stories format to Google Ads, add Pinterest Ads, rename TikTok Full Screen to Story</li><li><span class="d">2026-06-09</span> Perf: single global image cache, load each image once via fast proxy</li><li><span class="d">2026-06-09</span> Netlify: omit auth env keys from secrets scanner (false positive)</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#C0392B">
+  <header><h3><a href="https://github.com/konatel-code/Mobil" target="_blank">CallGuard (blokovanie hovorov)</a> <span class="repo">Mobil</span></h3>
+  <span class="badge" style="background:#C0392B">Zamrznuté</span></header>
+  <p class="typ">Android appka, API 36 · oblasť: Osobné</p>
+  <div class="kpi"><span>posledný push <b>2026-08-15</b> (71 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>1</b></span><span>vetvy <b>2</b></span><span>CI: Build APK: success (2026-08-15), Build APK: success (2026-08-15)</span></div>
+  <p><b>Stav:</b> Hotové v draft PR #1 (4 commity, 68 súborov), APK build zelený 15. 8. 72 dní bez pohybu, main prázdny.</p>
+  <p><b>Na čo sa čaká:</b> Na tvoje rozhodnutie, či ju používaš alebo vydať.</p>
+  <p class="krok"><b>Ďalší krok:</b> Zlúčiť PR alebo archivovať.</p>
+  <ul class='prs'><li>PR #1 <em>CallGuard - Android aplikácia na blokovanie hovorov (API 36)</em> - 4 commitov, 68 súborov, posledná zmena 2026-08-15 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-08-14</span> Initial commit</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#C0392B">
+  <header><h3><a href="https://github.com/konatel-code/Hry-CK-DAKA" target="_blank">Hry CK DAKA (7 offline hier)</a> <span class="repo">Hry-CK-DAKA</span></h3>
+  <span class="badge" style="background:#C0392B">Zamrznuté</span></header>
+  <p class="typ">Web + Android APK, skóre na server · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-07-17</b> (100 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>1</b></span><span>vetvy <b>2</b></span><span>CI: Build APK: success (2026-07-17), Build APK: success (2026-07-17)</span></div>
+  <p><b>Stav:</b> Hotové v draft PR #1 (17. 7.), APK build zelený. 101 dní bez pohybu, main prázdny.</p>
+  <p><b>Na čo sa čaká:</b> Na rozhodnutie, či ide do klientskej appky CK DAKA alebo sa archivuje.</p>
+  <p class="krok"><b>Ďalší krok:</b> Rozhodnúť v rámci CK-DAKA-app.</p>
+  <ul class='prs'><li>PR #1 <em>Hry CK DAKA: offline aplikácia s 5 hrami + automatický build APK</em> - 7 commitov, 40 súborov, posledná zmena 2026-07-17 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-07-17</span> Parser zájazdov prispôsobený reálnemu formátu exportu CK DAKA</li><li><span class="d">2026-07-17</span> Diagnostika štruktúry XML exportu v CI + oprava case-sensitivity parsera</li><li><span class="d">2026-07-17</span> Skóre sa ukladá natívne cez SharedPreferences mostík (oprava straty dát)</li></ul></details>
+</article></section><section><h2 style="color:#5B6B8A">Hotové / bez aktivity <small>12 · zlúčené alebo v prevádzke, viac ako 30 dní bez zmeny</small></h2>
+<article class="card" style="border-left-color:#5B6B8A">
+  <header><h3><a href="https://github.com/konatel-code/Intime" target="_blank">Intime</a> <span class="repo">Intime</span></h3>
+  <span class="badge" style="background:#5B6B8A">Hotové / bez aktivity</span></header>
+  <p class="typ">Osobná mobilná appka · oblasť: Osobné</p>
+  <div class="kpi"><span>posledný push <b>2026-10-08</b> (18 d)</span><span>commity 7 / 30 dní <b>0 / 4</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>2</b></span><span>CI: Android CI: success (2026-10-08), iOS CI: success (2026-10-08)</span></div>
+  <p><b>Stav:</b> Osobná mobilná appka.</p>
+  <p><b>Na čo sa čaká:</b> Osobná mobilná appka.</p>
+  <p class="krok"><b>Ďalší krok:</b> Osobná mobilná appka.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-10-08</span> Doménová vrstva do spoločného modulu: párový kľúč, šifrovanie, sieť (#40)</li><li><span class="d">2026-10-07</span> Výpočet štatistík do spoločného modulu (#39)</li><li><span class="d">2026-10-07</span> Katalóg do spoločného modulu: kľúče zvlášť, slovenské názvy zvlášť (#38)</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#5B6B8A">
+  <header><h3><a href="https://github.com/konatel-code/TV-v-autobusoch" target="_blank">DAKA BusMedia (TV v autobusoch)</a> <span class="repo">TV-v-autobusoch</span></h3>
+  <span class="badge" style="background:#5B6B8A">Hotové / bez aktivity</span></header>
+  <p class="typ">Admin + API + worker + Player Agent (TypeScript, Go) · oblasť: DAKA Transport</p>
+  <div class="kpi"><span>posledný push <b>2026-09-09</b> (46 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>2</b></span><span>CI: CI: success (2026-09-09), CI: success (2026-09-09)</span></div>
+  <p><b>Stav:</b> MVP zlúčené do main 9. 9. (fáza 1 + časť fázy 2). V docs je zadanie pre Plesk. 47 dní bez zmeny.</p>
+  <p><b>Na čo sa čaká:</b> Na nasadenie na Plesk a prvé fyzické zariadenie v autobuse (Player Agent + Bosch). Z repozitára nevidno, či už beží.</p>
+  <p class="krok"><b>Ďalší krok:</b> Potvrdiť, či je nasadené; ak nie, naplánovať pilot v jednom autobuse.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-09-09</span> DAKA BusMedia: MVP systému pre obsah na TV v autobusoch (#1)</li><li><span class="d">2026-09-09</span> CI: ignorovať vzorové heslo z dokumentácie v secret scane (.gitleaksignore)</li><li><span class="d">2026-09-09</span> Docs: zadanie pre Plesk - poradie krokov a kto zadáva tajomstvá</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#5B6B8A">
+  <header><h3><a href="https://github.com/konatel-code/Kalinkovo-v-mobile" target="_blank">Krajšie Kalinkovo (komunitná PWA)</a> <span class="repo">Kalinkovo-v-mobile</span></h3>
+  <span class="badge" style="background:#5B6B8A">Hotové / bez aktivity</span></header>
+  <p class="typ">Next.js PWA - tabuľa, push, nahlasovanie problémov; krajsiekalinkovo.sk · oblasť: Kalinkovo</p>
+  <div class="kpi"><span>posledný push <b>2026-09-07</b> (48 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>2</b></span><span>CI: CI: success (2026-09-07), CI: success (2026-09-07)</span></div>
+  <p><b>Stav:</b> MVP fáza 1 pre staging/pilot, PR #4 zlúčený 7. 9. 49 dní bez zmeny.</p>
+  <p><b>Na čo sa čaká:</b> Na nasadenie na krajsiekalinkovo.sk a otvorené obsahové a právne rozhodnutia v docs/known-limitations.md. Z repozitára nevidno, či beží.</p>
+  <p class="krok"><b>Ďalší krok:</b> Rozhodnúť, či spustiť pilot v obci.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-09-07</span> Merge PR #4: CSP za behu (proxy.ts) + ikony PWA mimo rezervovanej cesty /icons/</li><li><span class="d">2026-09-07</span> fix(pwa): ikony presunuté z /icons na /app-icons - cesta /icons/ je na Plesku/Apache rezervovaná (404 z nginx)</li><li><span class="d">2026-09-06</span> fix(security): CSP a bezpečnostné hlavičky za behu (src/proxy.ts) - zmena HERO_VIDEO_URL/MAP_TILE_URL nevyžaduje rebuild</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#5B6B8A">
+  <header><h3><a href="https://github.com/konatel-code/Kalinkovo" target="_blank">Moje Kalinkovo (Starostom na 5 minút)</a> <span class="repo">Kalinkovo</span></h3>
+  <span class="badge" style="background:#5B6B8A">Hotové / bez aktivity</span></header>
+  <p class="typ">Next.js komunitná hra o rozpočte obce · oblasť: Kalinkovo</p>
+  <div class="kpi"><span>posledný push <b>2026-09-06</b> (49 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>2</b></span><span>CI: CI: success (2026-09-06), CI: failure (2026-09-06)</span></div>
+  <p><b>Stav:</b> Hotové vrátane schválených právnych textov (PR #6, #7 z 6. 9.). 50 dní bez zmeny.</p>
+  <p><b>Na čo sa čaká:</b> Na nasadenie a zverejnenie na moje.krajsiekalinkovo.sk - z repozitára nevidno, či beží.</p>
+  <p class="krok"><b>Ďalší krok:</b> Nasadiť alebo odložiť s jasným dátumom.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-09-06</span> deps: vitest 3.2.7 (#7)</li><li><span class="d">2026-09-06</span> deps: vitest 3.2.7 (mimo rozsahu advisory GHSA pre vitest 4.0.x, kompatibilné s npm 10)</li><li><span class="d">2026-09-06</span> content: schválené právne texty a reálne kontakty (#6)</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#5B6B8A">
+  <header><h3><a href="https://github.com/konatel-code/Bus-aukcia" target="_blank">BidBus (bidbus.eu)</a> <span class="repo">Bus-aukcia</span></h3>
+  <span class="badge" style="background:#5B6B8A">Hotové / bez aktivity</span></header>
+  <p class="typ">Reverzná aukcia autobusovej dopravy, Next.js + PostgreSQL · oblasť: BidBus</p>
+  <div class="kpi"><span>posledný push <b>2026-09-06</b> (49 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>8</b></span><span>CI: CI: success (2026-09-06), CI: success (2026-09-06)</span></div>
+  <p><b>Stav:</b> Posledný PR #20 (i18n, PM2) 6. 9. Funkcie: chat, Stripe záloha, 7 jazykov, dashboardy. 7 starých vetiev z júna a júla nie je zlúčených. 50 dní bez zmeny. Homepage repozitára ukazuje na bus-aukcia.vercel.app.</p>
+  <p><b>Na čo sa čaká:</b> Na obchodný rozbeh (dopravcovia a klienti), nie na kód.</p>
+  <p class="krok"><b>Ďalší krok:</b> Vymazať staré vetvy; sledovať počet dopytov na bidbus.eu.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-09-06</span> i18n: translate remaining landing texts; fix PM2 ecosystem config (#20)</li><li><span class="d">2026-08-19</span> feat: dashboard activity charts for admin, carrier, and client (#19)</li><li><span class="d">2026-08-10</span> feat: i18n (7 languages), archive filters, chat notifications, Stripe deposit, Plesk deploy config (#18)</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#5B6B8A">
+  <header><h3><a href="https://github.com/konatel-code/MCP-CK-DAKA" target="_blank">MCP server CK DAKA</a> <span class="repo">MCP-CK-DAKA</span></h3>
+  <span class="badge" style="background:#5B6B8A">Hotové / bez aktivity</span></header>
+  <p class="typ">MCP server nad databázou CK (TypeScript), OAuth · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-09-04</b> (51 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>1</b></span><span>vetvy <b>2</b></span><span>CI: bez CI</span></div>
+  <p><b>Stav:</b> OAuth nasadený 2. 9., dokumentácia 4. 9. Konektory CK_DAKA aj is_daka_sk fungujú (dnešný report cez CK_DAKA overil točenia kolesa). Draft PR #1 (34 commitov) stále nie je zlúčený do main. 52 dní bez zmeny.</p>
+  <p><b>Na čo sa čaká:</b> Nič neblokuje. Zlúčiť PR do main pre poriadok.</p>
+  <p class="krok"><b>Ďalší krok:</b> Zlúčiť PR #1.</p>
+  <ul class='prs'><li>PR #1 <em>MCP server pre dáta CK DAKA + návod na prieskum administrácie</em> - 34 commitov, 45 súborov, posledná zmena 2026-09-04 (draft)</li></ul>
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-09-04</span> Redakcia skrývala menej, než tvrdila - doplnené o kľúče a kódy</li><li><span class="d">2026-09-02</span> OAuth je nasadený - dokumentácia a .mcp.json na to reagujú</li><li><span class="d">2026-08-18</span> Popis prihlásenia cez OAuth ako druhej cesty k endpointu</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#5B6B8A">
+  <header><h3><a href="https://github.com/konatel-code/Futbal" target="_blank">Klubor (klubor.sk)</a> <span class="repo">Futbal</span></h3>
+  <span class="badge" style="background:#5B6B8A">Hotové / bez aktivity</span></header>
+  <p class="typ">Multi-tenant platforma pre športové kluby, Laravel · oblasť: Osobné / podnikanie</p>
+  <div class="kpi"><span>posledný push <b>2026-09-01</b> (54 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>2</b></span><span>CI: CI: success (2026-09-01), CI: success (2026-09-01)</span></div>
+  <p><b>Stav:</b> Verejná úvodná stránka, registrácia klubu, obnova hesla, nasadenie cez Plesk (PR #5-#7, do 1. 9.). 55 dní bez zmeny.</p>
+  <p><b>Na čo sa čaká:</b> Na ďalší produktový krok (prvý reálny klub) a rozhodnutie, či pokračovať.</p>
+  <p class="krok"><b>Ďalší krok:</b> Rozhodnúť o pokračovaní alebo zmrazení.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-09-01</span> Repozitár Plesku sa hľadá podľa obsahu, nie podľa uhádnutej cesty (#7)</li><li><span class="d">2026-08-31</span> Log a zistenie verzie pri nasadení cez Plesk (#6)</li><li><span class="d">2026-08-31</span> Verejná úvodná stránka, registrácia klubu a obnova hesla (#5)</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#5B6B8A">
+  <header><h3><a href="https://github.com/konatel-code/Plaud" target="_blank">DAKA Hlas (vlastný Plaud)</a> <span class="repo">Plaud</span></h3>
+  <span class="badge" style="background:#5B6B8A">Hotové / bez aktivity</span></header>
+  <p class="typ">Prepis a zhrnutie rozhovorov, TypeScript, Google STT, Docker · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-08-20</b> (66 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>2</b></span><span>CI: Demo na GitHub Pages: success (2026-08-18), Demo na GitHub Pages: cancelled (2026-08-18)</span></div>
+  <p><b>Stav:</b> Posledné opravy 18. až 20. 8. (dlhé nahrávky cez ffmpeg, Google STT sk-SK). 67 dní bez zmeny.</p>
+  <p><b>Na čo sa čaká:</b> Na nasadenie do produkcie (docker-compose.prod) a reálne používanie na pobočkách. Z repozitára nevidno, či sa používa.</p>
+  <p class="krok"><b>Ďalší krok:</b> Rozhodnúť, či nasadiť pre predajcov.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-08-20</span> fix(ai): dlhé nahrávky cez ffmpeg-static (rozsekanie na kúsky bez roota) (#15)</li><li><span class="d">2026-08-18</span> fix(ai): dlhé nahrávky bez ffmpeg cez LongRunningRecognize (#14)</li><li><span class="d">2026-08-18</span> fix(ai): odolnejší parsing JSON zo zhrnutia + diagnostika (#13)</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#5B6B8A">
+  <header><h3><a href="https://github.com/konatel-code/Task-app" target="_blank">CK DAKA Úlohy</a> <span class="repo">Task-app</span></h3>
+  <span class="badge" style="background:#5B6B8A">Hotové / bez aktivity</span></header>
+  <p class="typ">Interná PWA na úlohy podľa pobočiek, Node.js · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-08-18</b> (68 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>2</b></span><span>CI: bez CI</span></div>
+  <p><b>Stav:</b> Hotové, PR #4 a #5 (push upozornenia, hľadanie) do 18. 8. 69 dní bez zmeny.</p>
+  <p><b>Na čo sa čaká:</b> Na nasadenie a zavedenie na pobočkách - z repozitára nevidno, či ju tím používa.</p>
+  <p class="krok"><b>Ďalší krok:</b> Overiť používanie; ak nie, rozhodnúť o zavedení alebo zrušení.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-08-18</span> Nedovoliť, aby chýbajúca knižnica pre upozornenia zhodila aplikáciu (#5)</li><li><span class="d">2026-08-18</span> Nedovoliť, aby chýbajúca knižnica pre upozornenia zhodila aplikáciu</li><li><span class="d">2026-08-15</span> Upozornenia do telefónu, hľadanie, kroky v úlohe a ďalších sedem vylepšení (#4)</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#5B6B8A">
+  <header><h3><a href="https://github.com/konatel-code/vyplaty" target="_blank">Výplaty (úhrady miezd podľa cashflow)</a> <span class="repo">vyplaty</span></h3>
+  <span class="badge" style="background:#5B6B8A">Hotové / bez aktivity</span></header>
+  <p class="typ">Jeden HTML súbor · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-08-15</b> (71 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>1</b></span><span>CI: bez CI</span></div>
+  <p><b>Stav:</b> Hotové, dáta za máj až júl 2026, 15. 8. záložka Prehľad firmy. Bez vetvy main. 72 dní bez zmeny.</p>
+  <p><b>Na čo sa čaká:</b> Na mesačnú aktualizáciu dát, ak ho používaš.</p>
+  <p class="krok"><b>Ďalší krok:</b> Nič, pokiaľ sa používa.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-08-15</span> Záložka Prehľad firmy s automatickým načítavaním z interného systému</li><li><span class="d">2026-08-13</span> Zapracovaný aktuálny stav zo zálohy 13.08.</li><li><span class="d">2026-08-12</span> Zjednotenie názvov odvetví a automatické odstránenie duplicít</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#5B6B8A">
+  <header><h3><a href="https://github.com/konatel-code/QR-code" target="_blank">QR Skener</a> <span class="repo">QR-code</span></h3>
+  <span class="badge" style="background:#5B6B8A">Hotové / bez aktivity</span></header>
+  <p class="typ">Android appka, Kotlin, release na Google Play · oblasť: Osobné</p>
+  <div class="kpi"><span>posledný push <b>2026-08-15</b> (71 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>2</b></span><span>CI: Release pre Google Play: success (2026-10-23), Build APK: success (2026-08-15)</span></div>
+  <p><b>Stav:</b> Kód bez zmeny od 15. 8. (72 dní), ale 23. 10. si ručne spustil workflow &#x27;Release pre Google Play&#x27; - zostavil podpísaný App Bundle, overil podpis aj podporu 16 kB stránok a nahral artefakt (beh úspešný). Či bol balík nahratý do Play Console a zverejnený, z repozitára nevidno. Jediná release na GitHube je stále &#x27;debug-latest&#x27; zo 4. 8.</p>
+  <p><b>Na čo sa čaká:</b> Na nahratie AAB z 23. 10. do Play Console, ak sa to ešte nestalo.</p>
+  <p class="krok"><b>Ďalší krok:</b> Dokončiť publikovanie v Play Console.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-08-15</span> API 36, kontrola odkazov, priblíženie a zaostrenie (#3)</li><li><span class="d">2026-08-15</span> Zaostrenie na ťuknuté miesto</li><li><span class="d">2026-08-15</span> Doplniť priblíženie do popisov v obchode</li></ul></details>
+</article>
+<article class="card" style="border-left-color:#5B6B8A">
+  <header><h3><a href="https://github.com/konatel-code/EOS" target="_blank">EOS systém CK DAKA</a> <span class="repo">EOS</span></h3>
+  <span class="badge" style="background:#5B6B8A">Hotové / bez aktivity</span></header>
+  <p class="typ">Interná appka na porady, úlohy, Rocks; Microsoft prihlásenie; Vercel · oblasť: CK DAKA</p>
+  <div class="kpi"><span>posledný push <b>2026-08-15</b> (71 d)</span><span>commity 7 / 30 dní <b>0 / 0</b></span><span>otvorené PR <b>0</b></span><span>vetvy <b>2</b></span><span>CI: bez CI</span></div>
+  <p><b>Stav:</b> PR #9 (automatický import dát) zlúčený 15. 8. 72 dní bez zmeny. Homepage repozitára: eos-eosin.vercel.app.</p>
+  <p><b>Na čo sa čaká:</b> Na používanie pri kvartálnych EOS stretnutiach. Z repozitára nevidno, či ho tím používa.</p>
+  <p class="krok"><b>Ďalší krok:</b> Overiť, či tím appku používa.</p>
+  
+  <details><summary>Posledné commity</summary><ul class="commits"><li><span class="d">2026-08-15</span> Merge pull request #9 from konatel-code/claude/eos-internal-app-tasks-duoyqw</li><li><span class="d">2026-08-15</span> Zjednodušenie aplikácie: automatický import dát a prehľadnejšie ovládanie</li><li><span class="d">2026-07-22</span> Merge pull request #8 from konatel-code/claude/eos-internal-app-tasks-duoyqw</li></ul></details>
+</article></section>
+</main>
+<footer>Report vygenerovaný automaticky - Claude pre CK DAKA · 26.10.2026 06:01 UTC · kategórie sú odvodené z aktivity v GitHube, z obsahu commitov a z naplánovaných úloh; pri položkách „z repozitára nevidno“ chýba informácia mimo kódu.</footer>
+</body></html>
