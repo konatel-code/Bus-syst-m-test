@@ -5,7 +5,8 @@ import json, subprocess, sys, base64, datetime, re
 REPOS = """Medved Intime GhostDash CK-DAKA-app Mimicchain Textovka ckdaka-recommender Koleso-astia DJ-IMI
 Web-aplik-cia Kviz Uctovnik Kontrola-fakt-r TV-v-autobusoch Bus-syst-m Kalinkovo-v-mobile Kalinkovo Efaktura
 Bus-aukcia Tipy MCP-CK-DAKA Futbal Bazar Plaud baDAKAtel Task-app ckdaka-app banner-generator vyplaty QR-code
-EOS Mobil Hry-CK-DAKA Ck-daka Bus-syst-m-test""".split()
+EOS Mobil Hry-CK-DAKA Ck-daka Bus-syst-m-test
+porovnajceny.sk DAKAsoft Hostovnik AlergenMenu TurnusPlan Klubovna Voxpla CK-DAKA-FEED""".split()
 OWNER = "konatel-code"
 NOW = datetime.datetime.now(datetime.timezone.utc)
 

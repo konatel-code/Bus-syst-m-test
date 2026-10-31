@@ -1,9 +1,9 @@
 {
- "generated": "2026-10-26",
+ "generated": "2026-10-31",
  "repos": [
   {
    "repo": "Medved",
-   "pushed": "2026-10-26",
+   "pushed": "2026-10-30",
    "days_since_push": 0,
    "commits_7d": 7,
    "commits_30d": 30,
@@ -17,35 +17,35 @@
      "name": "Nasadenie na GitHub Pages",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-26",
+     "date": "2026-10-30",
      "event": "workflow_dispatch"
     },
     {
      "name": "Denná analýza médií",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-26",
+     "date": "2026-10-30",
      "event": "schedule"
     },
     {
      "name": "Nasadenie na GitHub Pages",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-25",
+     "date": "2026-10-29",
      "event": "workflow_dispatch"
     },
     {
      "name": "Denná analýza médií",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-25",
+     "date": "2026-10-29",
      "event": "schedule"
     },
     {
      "name": "Nasadenie na GitHub Pages",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-24",
+     "date": "2026-10-28",
      "event": "workflow_dispatch"
     }
    ],
@@ -54,7 +54,7 @@
   {
    "repo": "Intime",
    "pushed": "2026-10-08",
-   "days_since_push": 18,
+   "days_since_push": 23,
    "commits_7d": 0,
    "commits_30d": 4,
    "open_prs": [],
@@ -104,7 +104,7 @@
   {
    "repo": "GhostDash",
    "pushed": "2026-10-07",
-   "days_since_push": 18,
+   "days_since_push": 23,
    "commits_7d": 0,
    "commits_30d": 18,
    "open_prs": [
@@ -165,19 +165,19 @@
   },
   {
    "repo": "CK-DAKA-app",
-   "pushed": "2026-10-07",
-   "days_since_push": 18,
-   "commits_7d": 0,
-   "commits_30d": 4,
+   "pushed": "2026-10-30",
+   "days_since_push": 1,
+   "commits_7d": 33,
+   "commits_30d": 37,
    "open_prs": [
     {
      "n": 1,
      "title": "Fáza 0–13: appka CK DAKA — napojená na reálne dáta",
      "head": "claude/ck-daka-android-app-bps1hv",
-     "updated": "2026-10-07",
-     "commits": 184,
-     "files": 349,
-     "additions": 45855,
+     "updated": "2026-10-30",
+     "commits": 217,
+     "files": 417,
+     "additions": 56050,
      "draft": true,
      "mergeable": "clean"
     }
@@ -193,43 +193,45 @@
     "claude/mcp-oauth",
     "claude/mcp-vendorovany-zdrojak",
     "claude/redakcia-kluce",
+    "claude/reklamne-feedy",
+    "claude/revert-feedy",
     "deploy/web",
     "main"
    ],
    "recent_runs": [
     {
+     "name": "Deploy web build",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-30",
+     "event": "push"
+    },
+    {
      "name": "CI",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-07",
+     "date": "2026-10-30",
+     "event": "push"
+    },
+    {
+     "name": "Build Android APK",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-30",
      "event": "push"
     },
     {
      "name": "Deploy web build",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-07",
-     "event": "push"
-    },
-    {
-     "name": "Build Android APK",
-     "status": "completed",
-     "conclusion": "success",
-     "date": "2026-10-07",
+     "date": "2026-10-30",
      "event": "push"
     },
     {
      "name": "CI",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-07",
-     "event": "push"
-    },
-    {
-     "name": "Build Android APK",
-     "status": "completed",
-     "conclusion": "success",
-     "date": "2026-10-07",
+     "date": "2026-10-30",
      "event": "push"
     }
    ],
@@ -238,7 +240,7 @@
   {
    "repo": "Mimicchain",
    "pushed": "2026-10-07",
-   "days_since_push": 18,
+   "days_since_push": 23,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -300,7 +302,7 @@
   {
    "repo": "Textovka",
    "pushed": "2026-10-07",
-   "days_since_push": 18,
+   "days_since_push": 23,
    "commits_7d": 0,
    "commits_30d": 3,
    "open_prs": [
@@ -362,7 +364,7 @@
   {
    "repo": "ckdaka-recommender",
    "pushed": "2026-10-07",
-   "days_since_push": 18,
+   "days_since_push": 23,
    "commits_7d": 0,
    "commits_30d": 1,
    "open_prs": [],
@@ -384,7 +386,7 @@
   {
    "repo": "Koleso-astia",
    "pushed": "2026-10-24",
-   "days_since_push": 1,
+   "days_since_push": 6,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -409,10 +411,10 @@
   },
   {
    "repo": "DJ-IMI",
-   "pushed": "2026-10-24",
-   "days_since_push": 1,
-   "commits_7d": 1,
-   "commits_30d": 13,
+   "pushed": "2026-10-29",
+   "days_since_push": 2,
+   "commits_7d": 4,
+   "commits_30d": 16,
    "open_prs": [],
    "branches": [
     "ccr-ab1e9307-9lukbs"
@@ -422,10 +424,10 @@
   },
   {
    "repo": "Web-aplik-cia",
-   "pushed": "2026-10-19",
-   "days_since_push": 6,
+   "pushed": "2026-10-27",
+   "days_since_push": 3,
    "commits_7d": 1,
-   "commits_30d": 7,
+   "commits_30d": 4,
    "open_prs": [],
    "branches": [
     "claude/travel-agency-competitor-analysis-bri7r7",
@@ -433,9 +435,16 @@
    ],
    "recent_runs": [
     {
+     "name": "pages build and deployment",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-26",
+     "event": "dynamic"
+    },
+    {
      "name": "Týždenný monitoring konkurencie",
-     "status": "in_progress",
-     "conclusion": null,
+     "status": "completed",
+     "conclusion": "cancelled",
      "date": "2026-10-26",
      "event": "schedule"
     },
@@ -459,32 +468,25 @@
      "conclusion": "success",
      "date": "2026-10-12",
      "event": "dynamic"
-    },
-    {
-     "name": "Týždenný monitoring konkurencie",
-     "status": "completed",
-     "conclusion": "cancelled",
-     "date": "2026-10-12",
-     "event": "schedule"
     }
    ],
    "default_branch": "main"
   },
   {
    "repo": "Kviz",
-   "pushed": "2026-10-11",
-   "days_since_push": 14,
-   "commits_7d": 0,
-   "commits_30d": 28,
+   "pushed": "2026-10-30",
+   "days_since_push": 1,
+   "commits_7d": 1,
+   "commits_30d": 29,
    "open_prs": [
     {
      "n": 17,
      "title": "Zmeny po hre, banka na 300 tém, univerzálna verzia /kviz, heslo pre moderátora a kvízy pre zájazdy CK DAKA",
      "head": "claude/quiz-app-teams-iiddm9",
-     "updated": "2026-10-11",
-     "commits": 161,
-     "files": 100,
-     "additions": 155164,
+     "updated": "2026-10-30",
+     "commits": 162,
+     "files": 108,
+     "additions": 157084,
      "draft": true,
      "mergeable": "clean"
     }
@@ -498,8 +500,8 @@
   },
   {
    "repo": "Uctovnik",
-   "pushed": "2026-10-02",
-   "days_since_push": 23,
+   "pushed": "2026-10-29",
+   "days_since_push": 1,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -507,10 +509,10 @@
      "n": 1,
      "title": "CK DAKA Accounting: kompletný základ účtovného systému podľa master špecifikácie",
      "head": "claude/accounting-program-project-d6c1av",
-     "updated": "2026-10-02",
-     "commits": 51,
-     "files": 1205,
-     "additions": 316667,
+     "updated": "2026-10-29",
+     "commits": 58,
+     "files": 1209,
+     "additions": 317302,
      "draft": true,
      "mergeable": "clean"
     }
@@ -524,35 +526,35 @@
      "name": "CI",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-02",
+     "date": "2026-10-29",
      "event": "pull_request"
     },
     {
      "name": "CI",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-02",
+     "date": "2026-10-29",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "cancelled",
+     "date": "2026-10-29",
      "event": "pull_request"
     },
     {
      "name": "CI",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-02",
+     "date": "2026-10-29",
      "event": "pull_request"
     },
     {
      "name": "CI",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-02",
-     "event": "pull_request"
-    },
-    {
-     "name": "CI",
-     "status": "completed",
-     "conclusion": "success",
-     "date": "2026-09-23",
+     "date": "2026-10-29",
      "event": "pull_request"
     }
    ],
@@ -561,7 +563,7 @@
   {
    "repo": "Kontrola-fakt-r",
    "pushed": "2026-09-10",
-   "days_since_push": 45,
+   "days_since_push": 50,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -609,7 +611,7 @@
   {
    "repo": "TV-v-autobusoch",
    "pushed": "2026-09-09",
-   "days_since_push": 46,
+   "days_since_push": 51,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -659,7 +661,7 @@
   {
    "repo": "Bus-syst-m",
    "pushed": "2026-09-07",
-   "days_since_push": 48,
+   "days_since_push": 53,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -734,7 +736,7 @@
   {
    "repo": "Kalinkovo-v-mobile",
    "pushed": "2026-09-07",
-   "days_since_push": 48,
+   "days_since_push": 53,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -784,7 +786,7 @@
   {
    "repo": "Kalinkovo",
    "pushed": "2026-09-06",
-   "days_since_push": 49,
+   "days_since_push": 54,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -834,7 +836,7 @@
   {
    "repo": "Efaktura",
    "pushed": "2026-09-06",
-   "days_since_push": 49,
+   "days_since_push": 54,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -875,7 +877,7 @@
   {
    "repo": "Bus-aukcia",
    "pushed": "2026-09-06",
-   "days_since_push": 49,
+   "days_since_push": 54,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -931,7 +933,7 @@
   {
    "repo": "Tipy",
    "pushed": "2026-09-05",
-   "days_since_push": 50,
+   "days_since_push": 55,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -944,7 +946,7 @@
   {
    "repo": "MCP-CK-DAKA",
    "pushed": "2026-09-04",
-   "days_since_push": 51,
+   "days_since_push": 56,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -969,10 +971,10 @@
   },
   {
    "repo": "Futbal",
-   "pushed": "2026-09-01",
-   "days_since_push": 54,
-   "commits_7d": 0,
-   "commits_30d": 0,
+   "pushed": "2026-10-30",
+   "days_since_push": 1,
+   "commits_7d": 1,
+   "commits_30d": 1,
    "open_prs": [],
    "branches": [
     "claude/novy-projekt-specifikacia-iecg9e",
@@ -983,28 +985,28 @@
      "name": "CI",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-09-01",
+     "date": "2026-10-30",
      "event": "push"
     },
     {
      "name": "CI",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-09-01",
+     "date": "2026-10-30",
      "event": "pull_request"
     },
     {
      "name": "CI",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-08-31",
+     "date": "2026-09-01",
      "event": "push"
     },
     {
      "name": "CI",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-08-31",
+     "date": "2026-09-01",
      "event": "pull_request"
     },
     {
@@ -1020,7 +1022,7 @@
   {
    "repo": "Bazar",
    "pushed": "2026-08-20",
-   "days_since_push": 66,
+   "days_since_push": 71,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -1084,7 +1086,7 @@
   {
    "repo": "Plaud",
    "pushed": "2026-08-20",
-   "days_since_push": 66,
+   "days_since_push": 71,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -1134,7 +1136,7 @@
   {
    "repo": "baDAKAtel",
    "pushed": "2026-08-20",
-   "days_since_push": 66,
+   "days_since_push": 71,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -1198,7 +1200,7 @@
   {
    "repo": "Task-app",
    "pushed": "2026-08-18",
-   "days_since_push": 68,
+   "days_since_push": 73,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -1212,7 +1214,7 @@
   {
    "repo": "ckdaka-app",
    "pushed": "2026-08-17",
-   "days_since_push": 69,
+   "days_since_push": 74,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -1225,7 +1227,7 @@
   {
    "repo": "banner-generator",
    "pushed": "2026-08-17",
-   "days_since_push": 69,
+   "days_since_push": 74,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -1287,7 +1289,7 @@
   {
    "repo": "vyplaty",
    "pushed": "2026-08-15",
-   "days_since_push": 71,
+   "days_since_push": 76,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -1300,7 +1302,7 @@
   {
    "repo": "QR-code",
    "pushed": "2026-08-15",
-   "days_since_push": 71,
+   "days_since_push": 76,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -1350,7 +1352,7 @@
   {
    "repo": "EOS",
    "pushed": "2026-08-15",
-   "days_since_push": 71,
+   "days_since_push": 76,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -1364,7 +1366,7 @@
   {
    "repo": "Mobil",
    "pushed": "2026-08-15",
-   "days_since_push": 71,
+   "days_since_push": 76,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -1426,7 +1428,7 @@
   {
    "repo": "Hry-CK-DAKA",
    "pushed": "2026-07-17",
-   "days_since_push": 100,
+   "days_since_push": 105,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [
@@ -1488,7 +1490,7 @@
   {
    "repo": "Ck-daka",
    "pushed": "2026-07-16",
-   "days_since_push": 101,
+   "days_since_push": 106,
    "commits_7d": 0,
    "commits_30d": 0,
    "open_prs": [],
@@ -1501,35 +1503,35 @@
      "name": "Deploy náhľad (GitHub Pages)",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-26",
+     "date": "2026-10-30",
      "event": "schedule"
     },
     {
      "name": "Deploy náhľad (GitHub Pages)",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-25",
+     "date": "2026-10-30",
      "event": "schedule"
     },
     {
      "name": "Deploy náhľad (GitHub Pages)",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-25",
+     "date": "2026-10-30",
      "event": "schedule"
     },
     {
      "name": "Deploy náhľad (GitHub Pages)",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-25",
+     "date": "2026-10-30",
      "event": "schedule"
     },
     {
      "name": "Deploy náhľad (GitHub Pages)",
      "status": "completed",
      "conclusion": "success",
-     "date": "2026-10-25",
+     "date": "2026-10-30",
      "event": "schedule"
     }
    ],
@@ -1537,15 +1539,351 @@
   },
   {
    "repo": "Bus-syst-m-test",
-   "pushed": "2026-10-19",
-   "days_since_push": 7,
-   "commits_7d": 0,
-   "commits_30d": 4,
+   "pushed": "2026-10-26",
+   "days_since_push": 4,
+   "commits_7d": 1,
+   "commits_30d": 5,
    "open_prs": [],
    "branches": [
     "main"
    ],
    "recent_runs": [],
+   "default_branch": "main"
+  },
+  {
+   "repo": "porovnajceny.sk",
+   "pushed": "2026-10-31",
+   "days_since_push": 0,
+   "commits_7d": 1,
+   "commits_30d": 1,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "PorovnajCeny.sk: complete implementation of phases 0-2 per spec v1.0",
+     "head": "claude/porovnajceny-sk-project-vjdfeh",
+     "updated": "2026-10-31",
+     "commits": 31,
+     "files": 751,
+     "additions": 85628,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/porovnajceny-sk-project-vjdfeh",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-31",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "cancelled",
+     "date": "2026-10-31",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "cancelled",
+     "date": "2026-10-31",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "cancelled",
+     "date": "2026-10-31",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-31",
+     "event": "pull_request"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "DAKAsoft",
+   "pushed": "2026-10-31",
+   "days_since_push": 0,
+   "commits_7d": 1,
+   "commits_30d": 1,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "Prezentačný web dakasoft.sk: portfólio 39 projektov + návod na Plesk",
+     "head": "ccr-10314720-ig97ns",
+     "updated": "2026-10-31",
+     "commits": 2,
+     "files": 734,
+     "additions": 11869,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "ccr-10314720-ig97ns",
+    "main"
+   ],
+   "recent_runs": [],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Hostovnik",
+   "pushed": "2026-10-31",
+   "days_since_push": -1,
+   "commits_7d": 1,
+   "commits_30d": 1,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "feat: Hosťovník MVP (fáza 0 a 1) podľa špecifikácie v1.0",
+     "head": "ccr-54c91585-34ns0a",
+     "updated": "2026-10-31",
+     "commits": 7,
+     "files": 240,
+     "additions": 50432,
+     "draft": true,
+     "mergeable": "unstable"
+    }
+   ],
+   "branches": [
+    "ccr-54c91585-34ns0a",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "in_progress",
+     "conclusion": null,
+     "date": "2026-10-31",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-31",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "failure",
+     "date": "2026-10-31",
+     "event": "pull_request"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "AlergenMenu",
+   "pushed": "2026-10-30",
+   "days_since_push": 0,
+   "commits_7d": 1,
+   "commits_30d": 1,
+   "open_prs": [],
+   "branches": [
+    "main"
+   ],
+   "recent_runs": [],
+   "default_branch": "main"
+  },
+  {
+   "repo": "TurnusPlan",
+   "pushed": "2026-10-30",
+   "days_since_push": 0,
+   "commits_7d": 1,
+   "commits_30d": 1,
+   "open_prs": [],
+   "branches": [
+    "main"
+   ],
+   "recent_runs": [],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Klubovna",
+   "pushed": "2026-10-30",
+   "days_since_push": 0,
+   "commits_7d": 1,
+   "commits_30d": 1,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "Kurzovňa: fáza 0, fáza 1 (MVP), fáza 2 a časť fázy 3",
+     "head": "ccr-30171a11-qv9rru",
+     "updated": "2026-10-30",
+     "commits": 35,
+     "files": 341,
+     "additions": 27523,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "ccr-30171a11-qv9rru",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-30",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-30",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-30",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-30",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-30",
+     "event": "pull_request"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "Voxpla",
+   "pushed": "2026-10-30",
+   "days_since_push": 0,
+   "commits_7d": 1,
+   "commits_30d": 1,
+   "open_prs": [
+    {
+     "n": 1,
+     "title": "Voxpla: phase 0, phase 1 MVP, phase 2 and phase 3",
+     "head": "claude/relaxed-curie-fv788z",
+     "updated": "2026-10-30",
+     "commits": 22,
+     "files": 367,
+     "additions": 60956,
+     "draft": true,
+     "mergeable": "clean"
+    }
+   ],
+   "branches": [
+    "claude/relaxed-curie-fv788z",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-30",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-30",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-30",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "cancelled",
+     "date": "2026-10-30",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "cancelled",
+     "date": "2026-10-30",
+     "event": "pull_request"
+    }
+   ],
+   "default_branch": "main"
+  },
+  {
+   "repo": "CK-DAKA-FEED",
+   "pushed": "2026-10-28",
+   "days_since_push": 2,
+   "commits_7d": 11,
+   "commits_30d": 11,
+   "open_prs": [],
+   "branches": [
+    "claude/peaceful-euler-sb4rca",
+    "main"
+   ],
+   "recent_runs": [
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-28",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-28",
+     "event": "pull_request"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-28",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-28",
+     "event": "push"
+    },
+    {
+     "name": "CI",
+     "status": "completed",
+     "conclusion": "success",
+     "date": "2026-10-28",
+     "event": "pull_request"
+    }
+   ],
    "default_branch": "main"
   }
  ]
